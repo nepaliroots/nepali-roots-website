@@ -1,0 +1,298 @@
+:root {
+  --cleenhearts-white: #24102F;
+  --cleenhearts-white-rgb: toRGB(#24102F);
+  --cleenhearts-white2: #351C42;
+  --cleenhearts-white2-rgb: toRGB(#351C42);
+  --cleenhearts-white3: #757277;
+  --cleenhearts-white3-rgb: toRGB(#757277);
+  --cleenhearts-white4: #200C2A;
+  --cleenhearts-white4-rgb: toRGB(#200C2A);
+  --cleenhearts-dark: #fff;
+  --cleenhearts-dark-rgb: toRGB(#fff);
+  --cleenhearts-dark2: #EFECE7;
+  --cleenhearts-dark2-rgb: toRGB(#EFECE7);
+  --cleenhearts-base: #fff;
+  --cleenhearts-base-rgb: toRGB(#fff);
+}
+
+.worldwide-one--home .worldwide-one__location__map:hover,
+.donation-card__category,
+.main-header__cart__link {
+  color: var(--cleenhearts-purple);
+}
+
+.donations-two__shape {
+  background-color: var(--cleenhearts-purple);
+  opacity: 0.15;
+}
+.donations-two__shape::after {
+  border-color: var(--cleenhearts-purple);
+}
+
+.footer-two,
+.video-button,
+.testimonials-card__bg,
+.events-two .active .accordion-title__icon::after,
+.events-two .accordion-title__icon,
+.worldwide-one--home .cleenhearts-btn__icon-box,
+.donation-card__btn:hover .cleenhearts-btn__icon-box,
+.cleenhearts-btn__icon-box,
+.main-header-two .main-header__btn .cleenhearts-btn__icon-box,
+.main-header-two__sidebar-btn__line,
+.main-header__cart__quantity {
+  background-color: var(--cleenhearts-white2);
+}
+
+.social-link-two a,
+.main-footer__copyright,
+.blog-card-two__link,
+.cleenhearts-owl__carousel--basic-nav .owl-nav button span,
+.events-gallery__link,
+.event-card-four__date,
+.worldwide-one__location__text,
+.worldwide-one--home .cleenhearts-btn .cleenhearts-btn__text,
+.donation-card__btn.cleenhearts-btn:hover .cleenhearts-btn__text,
+.donation-card__btn .cleenhearts-btn__icon-box__inner span,
+.donation-card:hover .donation-card__category,
+.cleenhearts-btn,
+.hero-banner__content__btn .cleenhearts-btn:hover .cleenhearts-btn__text,
+.hero-banner__content__btn .cleenhearts-btn__icon-box span,
+.main-header-two .main-header__btn,
+.main-menu .main-menu__list > li > a,
+.main-menu-two .main-menu__list > li > a {
+  color: var(--cleenhearts-white2);
+}
+
+.main-menu .main-menu__list li ul,
+.main-menu-two .main-menu__list li ul {
+  box-shadow: 0px 10px 60px 0px rgba(255, 255, 255, 0.07);
+}
+
+.social-link-two a,
+.main-header-two .main-header__btn {
+  border-color: var(--cleenhearts-white2);
+}
+
+.social-link-two a:hover,
+.video-button span,
+.worldwide-one--home .worldwide-one__inner__title,
+.worldwide-one--home .worldwide-one__inner__text,
+.worldwide-one--home .worldwide-one__text,
+.worldwide-one--home .sec-title__title,
+.worldwide-one--home .sec-title__tagline,
+.about-two .sec-title__title,
+.board-member .sec-title__title,
+.main-header__right .cleenhearts-btn:hover .cleenhearts-btn__text {
+  color: var(--cleenhearts-dark);
+}
+
+.events-gallery__link {
+  background-color: var(--cleenhearts-dark);
+}
+
+.footer-widget__subscribe__checkbox label::before {
+  border-color: var(--cleenhearts-dark);
+}
+
+.footer-two .footer-widget__title,
+.cleenhearts-owl__carousel--basic-nav .owl-nav button span:hover,
+.board-member__social a:hover,
+.testimonials-two .testimonials-card__name,
+.worldwide-one--home .worldwide-one__inner__icon span,
+.donation-card__btn:hover .cleenhearts-btn__icon-box__inner span,
+.service-one__item:hover .service-one__right a,
+.service-one__title,
+.about-two .contact-information__phone__text h5,
+.about-two .contact-information__phone__text span,
+.cleenhearts-btn:hover .cleenhearts-btn__text,
+.cleenhearts-btn__icon-box__inner span,
+.about-two .sec-title__tagline,
+.board-member .sec-title__tagline,
+.about-info__counter__text,
+.cleenhearts-btn__icon-box__inner span.icon-donate {
+  color: var(--cleenhearts-dark2);
+}
+
+.service-one__number {
+  color: var(--cleenhearts-white2);
+  text-shadow: 1px 1px 0 var(--cleenhearts-white3), -1px -1px 0 var(--cleenhearts-white3), 1px -1px 0 var(--cleenhearts-white3), -1px 1px 0 var(--cleenhearts-white3), 1px 1px 0 var(--cleenhearts-white3);
+}
+
+.volunteer-group__image,
+.hero-banner__content__author img {
+  border-color: var(--cleenhearts-base);
+}
+
+.blog-card-two__date__day,
+.board-member__designation,
+.worldwide-one--home .cleenhearts-btn:hover .cleenhearts-btn__text,
+.worldwide-one--home .cleenhearts-btn__icon-box__inner span,
+.donations-two .donation-card__btn,
+.hero-banner__content__btn .cleenhearts-btn {
+  color: var(--cleenhearts-base);
+}
+
+.main-slider-two .video-button {
+  background-color: RGBA(255, 255, 255, 0.5);
+}
+
+.video-button__ripple::before,
+.video-button__ripple::after,
+.main-slider-two .video-button__ripple::before,
+.main-slider-two .video-button__ripple::after {
+  box-shadow: 0 0 0 0 RGBA(255, 255, 255, 0.25);
+}
+
+.footer-widget__subscribe__form__inner,
+.cleenhearts-owl__carousel--basic-nav .owl-nav button span,
+.board-member .sec-title__tagline::before,
+.event-card-four__date,
+.worldwide-one--home .sec-title__tagline::before,
+.progress-box__bar__inner::after,
+.donation-card__category,
+.about-two .sec-title__tagline::before,
+.about-info__icon,
+.main-slider-two__carousel .owl-dots .owl-dot span {
+  background-color: var(--cleenhearts-dark2);
+}
+
+.main-slider-two__carousel .owl-dots .owl-dot span::after {
+  border-color: #808080;
+}
+
+.blog-card-two__title,
+.testimonials-two__top,
+.events-two__meta,
+.about-info__item,
+.service-one__content__inner:not(:last-child) .service-one__item,
+.event-card-four__time,
+.blog-card-two__title {
+  border-color: var(--cleenhearts-white3);
+}
+
+.events-two__time {
+  background-color: transparent;
+  border: 1px solid var(--cleenhearts-white3);
+}
+
+.blog-card-two__date,
+.event-card-four,
+.donation-card__image::before,
+.donation-card__image::after,
+.cleenhearts-accordion .accordion,
+.about-two {
+  background-color: var(--cleenhearts-white4);
+}
+
+.events-gallery__image::after {
+  background-color: var(--cleenhearts-white4);
+  opacity: 0.7;
+}
+
+.event-card-four {
+  border-color: var(--cleenhearts-white4);
+}
+
+.board-member .sec-title__tagline::after,
+.worldwide-one--home .worldwide-one__inner__icon,
+.worldwide-one--home .sec-title__tagline::after,
+.about-two .sec-title__tagline::after {
+  border-color: var(--cleenhearts-dark2);
+}
+
+.footer-widget__subscribe input[type=email],
+.donation-card__progress__title,
+.about-two__text {
+  color: var(--cleenhearts-white3);
+}
+
+.donation-card {
+  background-color: var(--cleenhearts-dark3);
+}
+
+.donation-card:hover .donation-card__image::before,
+.donation-card:hover .donation-card__image::after {
+  opacity: 0.7;
+}
+
+.donations-two .donation-card__progress {
+  background-image: url("../images/donations/donation-progress-bg-1-1-dark.png");
+  background-blend-mode: multiply;
+  background-color: var(--cleenhearts-white2);
+}
+
+.worldwide-one--home .worldwide-one__location__popup,
+.progress-box__bar {
+  background-color: var(--cleenhearts-base);
+}
+
+.donation-card__btn {
+  border-color: var(--cleenhearts-border-color);
+}
+
+.cleenhearts-accordion .accordion-title__icon::after,
+.cleenhearts-accordion .accordion-title__icon::before {
+  background-color: var(--cleenhearts-purple);
+}
+
+.worldwide-one--home {
+  background: linear-gradient(99deg, #200C2A 27.6%, rgba(32, 12, 42, 0.37) 99.42%);
+}
+
+.worldwide-one--home .worldwide-one__bg::after {
+  display: none;
+}
+
+.worldwide-one--home .worldwide-one__location__btn::before,
+.worldwide-one--home .worldwide-one__location__btn::after {
+  background-color: var(--cleenhearts-base);
+  box-shadow: 0 0 0 0 var(--cleenhearts-base);
+  opacity: 0.25;
+}
+
+.events-two .active .accordion-title__icon,
+.cleenhearts-accordion .accordion-title__icon::after,
+.cleenhearts-accordion .accordion-title__icon::before {
+  background-color: var(--cleenhearts-yellow);
+}
+
+.event-card-four__meta li + li::before {
+  background-color: #D9D9D9;
+}
+
+.testimonials-card__bg {
+  background-blend-mode: multiply;
+}
+
+.client-carousel__item svg,
+.client-carousel__item svg path {
+  fill: var(--cleenhearts-white3);
+}
+
+.client-carousel__item svg:hover path {
+  fill: var(--cleenhearts-secondary);
+}
+
+.cleenhearts-owl__carousel--basic-nav .owl-nav::before,
+.cleenhearts-owl__carousel--basic-nav .owl-nav::after {
+  background-color: var(--cleenhearts-white3);
+}
+
+.blog-card-two {
+  background-color: var(--cleenhearts-white2);
+  background-blend-mode: multiply;
+}
+
+.footer-widget__subscribe__checkbox label,
+.footer-widget__subscribe__text,
+.footer-two .footer-widget__info li,
+.footer-two .footer-widget__links li,
+.footer-two .footer-widget__map,
+.footer-two .footer-widget__about-text {
+  color: #D7D3CB;
+}
+
+.footer-widget__subscribe button[type=submit]:hover {
+  color: var(--cleenhearts-secondary);
+}
+/*# sourceMappingURL=cleenhearts-dark.css.map */

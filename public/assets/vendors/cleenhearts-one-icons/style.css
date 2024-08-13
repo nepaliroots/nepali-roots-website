@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'cleenhearts-one';
+  src:  url('fonts/cleenhearts-one.eot?opmacx');
+  src:  url('fonts/cleenhearts-one.eot?opmacx#iefix') format('embedded-opentype'),
+    url('fonts/cleenhearts-one.ttf?opmacx') format('truetype'),
+    url('fonts/cleenhearts-one.woff?opmacx') format('woff'),
+    url('fonts/cleenhearts-one.svg?opmacx#cleenhearts-one') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="cleenhearts-one-icon-"], [class*=" cleenhearts-one-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cleenhearts-one' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cleenhearts-one-icon-comments:before {
+  content: "\e914";
+}
+.cleenhearts-one-icon-user:before {
+  content: "\e915";
+}
+.cleenhearts-one-icon-right:before {
+  content: "\e913";
+}
+.cleenhearts-one-icon-cross:before {
+  content: "\e900";
+}
+.cleenhearts-one-icon-doctors:before {
+  content: "\e901";
+}
+.cleenhearts-one-icon-fasting:before {
+  content: "\e902";
+}
+.cleenhearts-one-icon-human-resources:before {
+  content: "\e903";
+}
+.cleenhearts-one-icon-kaaba:before {
+  content: "\e904";
+}
+.cleenhearts-one-icon-location:before {
+  content: "\e905";
+}
+.cleenhearts-one-icon-medical:before {
+  content: "\e906";
+}
+.cleenhearts-one-icon-medicine:before {
+  content: "\e907";
+}
+.cleenhearts-one-icon-nursing-home:before {
+  content: "\e908";
+}
+.cleenhearts-one-icon-nursing-staff:before {
+  content: "\e909";
+}
+.cleenhearts-one-icon-old-people:before {
+  content: "\e90a";
+}
+.cleenhearts-one-icon-paper-plane:before {
+  content: "\e90b";
+}
+.cleenhearts-one-icon-pray:before {
+  content: "\e90c";
+}
+.cleenhearts-one-icon-premium-quality:before {
+  content: "\e90d";
+}
+.cleenhearts-one-icon-quran:before {
+  content: "\e90e";
+}
+.cleenhearts-one-icon-up-right-arrow:before {
+  content: "\e90f";
+}
+.cleenhearts-one-icon-volunteering:before {
+  content: "\e910";
+}
+.cleenhearts-one-icon-zakat:before {
+  content: "\e911";
+}
+.cleenhearts-one-icon-play:before {
+  content: "\e912";
+}
+.cleenhearts-one-icon-quote:before {
+  content: "\e916";
+}
