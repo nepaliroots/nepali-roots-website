@@ -2,46 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nepali Roots|| A Bond Beyond Borders</title>
-    <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/nepali-roots/logos/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/nepali-roots/logos/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description"
-        content="Cleenheart is a modern & professional non profit charity HTML5 Template. Which fits for all kind of charity, fundraising, nonprofit, NGO, donations, church, Mosque and all other non-profit charity website, businesses and NGO." />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/vendors/cleenhearts-icons/style.css" />
-    <link rel="stylesheet" href="assets/vendors/swiper/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
-
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/cleenhearts.css" />
-    <link rel="stylesheet" href="assets/css/nepali-roots.css" />
+    <%- include ("../partials/header-scripts.ejs") %>
 </head>
 
 <body class="custom-cursor">
@@ -54,518 +15,225 @@
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <header class="main-header-three main-header sticky-header--three sticky-header sticky-header--normal">
-            <div class="container-fluid">
-                <div class="main-header__inner">
-                    <div class="main-header-three__logo">
-                        <a href="index.html">
-                            <!-- <img src="assets/images/logo-dark.png" alt="Cleenhearts HTML" width="156"> -->
-                            <img src="assets/images/nepali-roots/logos/logo-red.png" alt="Cleenhearts HTML" width="156">
-                        </a>
-                    </div><!-- /.main-header-three__logo -->
-                    <div class="main-header__right">
-                        <div class="main-header__right__left">
-                            <nav class="main-header__nav main-menu main-menu--three">
-                                <ul class="main-menu__list">
+        <%- include ("../partials/header-menus.ejs") %>
 
+            <%- include ("../partials/header-banners.ejs") %>
 
-
-                                    <li>
-                                        <a href="about.html">Home</a>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul>
-                                            <li><a href="donations-grid.html">Donations Grid</a></li>
-                                            <li><a href="donations-list.html">Donations List</a></li>
-                                            <li><a href="donations-carousel.html">Donations Carousel 01</a></li>
-                                            <li><a href="donations-carousel-2.html">Donations Carousel 02</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Donation Details</a>
-                                                <ul>
-                                                    <li><a href="donation-details.html">No sidebar</a></li>
-                                                    <li><a href="donation-details-left.html">Left sidebar</a></li>
-                                                    <li><a href="donation-details-right.html">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="#">Donate Now</a>
-                                                <ul>
-                                                    <li><a href="donate.html">No sidebar</a></li>
-                                                    <li><a href="donate-left.html">Left sidebar</a></li>
-                                                    <li><a href="donate-right.html">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#">Programs & Services</a>
-                                        <ul>
-                                            <li><a href="volunteer.html">Our Volunteer</a></li>
-                                            <li><a href="volunteer-carousel.html">Our Volunteer Carousel</a></li>
-                                            <li><a href="volunteer-details.html">Volunteer Details</a></li>
-                                            <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
-                                            <li><a href="pricing.html">Pricing Tables</a></li>
-                                            <li><a href="pricing-carousel.html">Pricing Tables Carousel</a></li>
-                                            <li>
-                                                <a href="#">Gallery</a>
-                                                <ul>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="gallery-grid.html">Gallery Grid</a></li>
-                                                    <li><a href="gallery-filter.html">Gallery filter</a></li>
-                                                    <li><a href="gallery-carousel.html">Gallery Carousel</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="faq.html">FAQS</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#">Events & Workshops</a>
-                                        <ul>
-                                            <li><a href="events-grid.html">Events Grid</a></li>
-                                            <li><a href="events-list.html">Events List</a></li>
-                                            <li><a href="events-carousel.html">Events Carousel 01</a></li>
-                                            <li><a href="events-carousel-2.html">Events Carousel 02</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Event Details</a>
-                                                <ul>
-                                                    <li><a href="event-details.html">No sidebar</a></li>
-                                                    <li><a href="event-details-left.html">Left sidebar</a></li>
-                                                    <li><a href="event-details-right.html">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#">Get Involved</a>
-                                        <ul>
-                                            <li class="dropdown">
-                                                <a href="#">Products</a>
-                                                <ul>
-                                                    <li><a href="products.html">No sidebar</a></li>
-                                                    <li><a href="products-left.html">Left sidebar</a></li>
-                                                    <li><a href="products-right.html">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="products-carousel.html">Products carousel</a></li>
-                                            <li><a href="product-details.html">Product details</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav><!-- /.main-header__nav -->
-                        </div><!-- /.main-header__right__left -->
-                        <div class="main-header__right__right">
-                            <div class="mobile-nav__btn mobile-nav__toggler">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div><!-- /.mobile-nav__toggler -->
-                            <div class="main-header__cart">
-                                <button class="main-header__sidebar-btn sidebar-btn__toggler">
-                                    <span class="icon-grid"></span>
-                                </button>
-                            </div><!-- /.main-header__cart -->
-                            <a href="donate.html" class="cleenhearts-btn main-header__btn">
-                                <div class="cleenhearts-btn__icon-box">
-                                    <div class="cleenhearts-btn__icon-box__inner"><span class="icon-donate"></span>
-                                    </div>
-                                </div>
-                                <span class="cleenhearts-btn__text">Events</span>
-                            </a><!-- /.thm-btn main-header__btn -->
-                            <div class="main-header-three__social">
-                                <span class="main-header-three__social__title">Follow
-                                    us:</span><!-- /.main-header-three__social__title -->
-                                <div class="social-link-two">
-                                    <a href="https://facebook.com">
-                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                        <span class="sr-only">Facebook</span>
-                                    </a>
-                                    <a href="https://linkedin.com" aria-hidden="true">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <span class="sr-only">Linkedin</span>
-                                    </a>
-                                    <a href="https://youtube.com" aria-hidden="true">
-                                        <i class="fab fa-youtube"></i>
-                                        <span class="sr-only">Youtube</span>
-                                    </a>
-                                </div><!-- /.footer-two__social -->
-                            </div><!-- /.main-header-three__social -->
-                        </div><!-- /.main-header__right__right -->
-                    </div><!-- /.main-header__right -->
-                </div><!-- /.main-header__inner -->
-            </div><!-- /.container-fluid -->
-        </header><!-- /.main-header -->
-        <!-- main-slider-start -->
-        <section class="main-slider-three">
-            <div class="main-slider-three__carousel cleenhearts-owl__carousel owl-carousel" data-owl-options='{
-                "loop": true,
-                "animateOut": "fadeOut",
-                "animateIn": "fadeIn",
-                "items": 1,
-                "autoplay": true,
-                "autoplayTimeout": 7000,
-                "smartSpeed": 1000,
-                "nav": true,
-                "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
-                "dots": false,
-                "margin": 0
-                }'>
-                <div class="item">
-                    <div class="main-slider-three__item">
-                        <!-- <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/backgrounds/slider-3-1.jpg);"></div> -->
-                        <!-- <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/nepali-roots/banners/banner8.jpg);"></div> -->
-                        <!-- slider-bg -->
-                        <!-- <div class="main-slider-three__shape"
-                            style="background-image: url(assets/images/shapes/slider-3-shape-1.png);"></div> -->
-                        <div class="main-slider-three__shape"
-                            style="background-image: url(assets/images/nepali-roots/banners/banner11.png);">
-                        </div>
-                        <svg class="main-slider-three__bg-svg" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                        </svg><!-- slider-bg-svg -->
+                <section class="about-three">
+                    <section class="about-info about-info--home-three section-space">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <div class="main-slider-three__content">
-                                        <h5 class="main-slider-three__sub-title">Knowledge And Experience Sharing
-                                        </h5>
-                                        <!-- slider-sub-title -->
-                                        <h2 class="main-slider-three__title">Professional Networking<br> Events
-                                        </h2>
-                                        <!-- slider-title -->
-                                        <div class="main-slider-three__btn">
-                                            <a href="about.html" class="cleenhearts-btn">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Initiatives</span>
-                                            </a><!-- slider-btn -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="main-slider-three__item">
-                        <!-- <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/backgrounds/slider-3-2.jpg);"></div> -->
-                        <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/nepali-roots/banners/banner13.jpeg);"></div>
-                        <!-- slider-bg -->
-                        <div class="main-slider-three__shape"
-                            style="background-image: url(assets/images/shapes/slider-3-shape-1.png);"></div>
-                        <svg class="main-slider-three__bg-svg" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                        </svg><!-- slider-bg-svg -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <div class="main-slider-three__content">
-                                        <h5 class="main-slider-three__sub-title">Workshops, Trainings, Webinars &
-                                            Podcasts
-                                        </h5>
-                                        <!-- slider-sub-title -->
-                                        <h2 class="main-slider-three__title">Educational And Professional <br> Growth
-                                        </h2>
-                                        <!-- slider-title -->
-                                        <div class="main-slider-three__btn">
-                                            <a href="about.html" class="cleenhearts-btn">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Discover more</span>
-                                            </a><!-- slider-btn -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="main-slider-three__item">
-                        <!-- <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/backgrounds/slider-3-3.jpg);"></div> -->
-                        <div class="main-slider-three__bg"
-                            style="background-image: url(assets/images/nepali-roots/banners/banner14.jpg);"></div>
-                        <!-- slider-bg -->
-                        <div class="main-slider-three__shape"
-                            style="background-image: url(assets/images/shapes/slider-3-shape-1.png);"></div>
-                        <svg class="main-slider-three__bg-svg" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                        </svg><!-- slider-bg-svg -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <div class="main-slider-three__content">
-                                        <h5 class="main-slider-three__sub-title">Collaboration With Nepali Institutions
-                                        </h5>
-                                        <!-- slider-sub-title -->
-                                        <h2 class="main-slider-three__title">Social<br> Collaboration
-                                        </h2>
-                                        <!-- slider-title -->
-                                        <div class="main-slider-three__btn">
-                                            <a href="about.html" class="cleenhearts-btn">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Discover more</span>
-                                            </a><!-- slider-btn -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- main-slider-end -->
-
-        <section class="about-three">
-            <section class="about-info about-info--home-three section-space">
-                <div class="container">
-                    <div class="row gutter-y-30 justify-content-center">
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
-                            data-wow-delay="00ms">
-                            <div class="about-info__item">
-                                <div class="about-info__icon">
-                                    <span class="icon-teamwork"></span>
-                                </div><!-- /.about-info__icon -->
-                                <div class="about-info__content">
-                                    <div class="about-info__counter count-box">
-                                        <h3 class="about-info__counter__text count-text">
-                                        </h3>
-                                        <h3 class="about-info__counter__text ">Professional Networking Events</h3>
-                                    </div><!-- /.about-info__counter -->
-                                    <h5 class="about-info__title">Organize events to connect Nepali professionals</h5>
-                                </div><!-- /.about-info__content -->
-                            </div><!-- /.about-info__item -->
-                        </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
-                            data-wow-delay="200ms">
-                            <div class="about-info__item">
-                                <div class="about-info__icon">
-                                    <span class="icon-teamwork"></span>
-                                </div><!-- /.about-info__icon -->
-                                <div class="about-info__content">
-                                    <div class="about-info__counter count-box">
-                                        <h3 class="about-info__counter__text count-text"></h3>
-                                        <h3 class="about-info__counter__text "> Educational & Professional Growth</h3>
-                                    </div><!-- /.about-info__counter -->
-                                    <h5 class="about-info__title">Knowledge & experience sharing programs</h5>
-                                </div><!-- /.about-info__content -->
-                            </div><!-- /.about-info__item -->
-                        </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
-                            data-wow-delay="400ms">
-                            <div class="about-info__item">
-                                <div class="about-info__icon">
-                                    <span class="icon-team"></span>
-                                </div><!-- /.about-info__icon -->
-                                <div class="about-info__content">
-                                    <div class="about-info__counter count-box">
-                                        <h3 class="about-info__counter__text count-text"></h3>
-                                        <h3 class="about-info__counter__text ">Workshops & Webinars
-                                        </h3>
-                                    </div><!-- /.about-info__counter -->
-                                    <h5 class="about-info__title">Organize several events to help the community</h5>
-                                </div><!-- /.about-info__content -->
-                            </div><!-- /.about-info__item -->
-                        </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
-                            data-wow-delay="600ms">
-                            <div class="about-info__item">
-                                <div class="about-info__icon">
-                                    <span class="icon-people"></span>
-                                </div><!-- /.about-info__icon -->
-                                <div class="about-info__content">
-                                    <div class="about-info__counter count-box">
-                                        <h3 class="about-info__counter__text count-text"></h3>
-                                        <h3 class="about-info__counter__text ">Social collaboration
-                                        </h3>
-                                    </div><!-- /.about-info__counter -->
-                                    <h5 class="about-info__title">Collaborate with Nepali educational institutions to
-                                        uplift standards</h5>
-                                </div><!-- /.about-info__content -->
-                            </div><!-- /.about-info__item -->
-                        </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </section><!-- /.about-info section-space -->
-            <div class="container">
-                <div class="row gutter-y-50">
-                    <div class="col-lg-6">
-                        <div class="about-three__image">
-                            <div class="about-three__image__inner wow fadeInLeft" data-wow-duration="1500ms"
-                                data-wow-delay="00ms">
-                                <!-- <img src="assets/images/about/about-3-1.jpg" alt="about"
+                            <div class="row gutter-y-30 justify-content-center">
+                                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
+                                    data-wow-delay="00ms">
+                                    <div class="about-info__item">
+                                        <div class="about-info__icon">
+                                            <span class="icon-teamwork"></span>
+                                        </div><!-- /.about-info__icon -->
+                                        <div class="about-info__content">
+                                            <div class="about-info__counter count-box">
+                                                <h3 class="about-info__counter__text count-text">
+                                                </h3>
+                                                <h3 class="about-info__counter__text ">Professional Networking Events
+                                                </h3>
+                                            </div><!-- /.about-info__counter -->
+                                            <h5 class="about-info__title">Organize events to connect Nepali
+                                                professionals
+                                            </h5>
+                                        </div><!-- /.about-info__content -->
+                                    </div><!-- /.about-info__item -->
+                                </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
+                                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
+                                    data-wow-delay="200ms">
+                                    <div class="about-info__item">
+                                        <div class="about-info__icon">
+                                            <span class="icon-teamwork"></span>
+                                        </div><!-- /.about-info__icon -->
+                                        <div class="about-info__content">
+                                            <div class="about-info__counter count-box">
+                                                <h3 class="about-info__counter__text count-text"></h3>
+                                                <h3 class="about-info__counter__text "> Educational & Professional
+                                                    Growth
+                                                </h3>
+                                            </div><!-- /.about-info__counter -->
+                                            <h5 class="about-info__title">Knowledge & experience sharing programs</h5>
+                                        </div><!-- /.about-info__content -->
+                                    </div><!-- /.about-info__item -->
+                                </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
+                                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
+                                    data-wow-delay="400ms">
+                                    <div class="about-info__item">
+                                        <div class="about-info__icon">
+                                            <span class="icon-team"></span>
+                                        </div><!-- /.about-info__icon -->
+                                        <div class="about-info__content">
+                                            <div class="about-info__counter count-box">
+                                                <h3 class="about-info__counter__text count-text"></h3>
+                                                <h3 class="about-info__counter__text ">Workshops & Webinars
+                                                </h3>
+                                            </div><!-- /.about-info__counter -->
+                                            <h5 class="about-info__title">Organize several events to help the community
+                                            </h5>
+                                        </div><!-- /.about-info__content -->
+                                    </div><!-- /.about-info__item -->
+                                </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
+                                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms"
+                                    data-wow-delay="600ms">
+                                    <div class="about-info__item">
+                                        <div class="about-info__icon">
+                                            <span class="icon-people"></span>
+                                        </div><!-- /.about-info__icon -->
+                                        <div class="about-info__content">
+                                            <div class="about-info__counter count-box">
+                                                <h3 class="about-info__counter__text count-text"></h3>
+                                                <h3 class="about-info__counter__text ">Social collaboration
+                                                </h3>
+                                            </div><!-- /.about-info__counter -->
+                                            <h5 class="about-info__title">Collaborate with Nepali educational
+                                                institutions
+                                                to
+                                                uplift standards</h5>
+                                        </div><!-- /.about-info__content -->
+                                    </div><!-- /.about-info__item -->
+                                </div><!-- /.col-xl-3 col-lg-4 col-md-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </section><!-- /.about-info section-space -->
+                    <div class="container">
+                        <div class="row gutter-y-50">
+                            <div class="col-lg-6">
+                                <div class="about-three__image">
+                                    <div class="about-three__image__inner wow fadeInLeft" data-wow-duration="1500ms"
+                                        data-wow-delay="00ms">
+                                        <!-- <img src="assets/images/about/about-3-1.jpg" alt="about"
                                     class="about-three__image__one">
                                 <img src="assets/images/about/about-3-2.jpg" alt="about"
                                     class="about-three__image__two"> -->
-                                <img src="assets/images/nepali-roots/about/about3.jpg" alt="about"
-                                    class="about-three__image__one">
-                                <img src="assets/images/nepali-roots/about/about4.png" alt="about"
-                                    class="about-three__image__two">
-                                <div class="about-three__experience"
-                                    style="background-image: url(assets/images/shapes/about-shape-3-2.png);">
-                                    <div class="about-three__experience__content">
-                                        <h3 class="about-three__experience__title">Together</h3>
-                                        <!-- /.about-three__experience__title -->
-                                        <p class="about-three__experience__text">Empowering<br>Nepali Professionals</p>
-                                        <!-- /.about-three__experience__text -->
-                                    </div><!-- /.about-three__experience__content -->
-                                </div><!-- /.about-three__experience -->
-                                <img src="assets/images/shapes/about-shape-3-1.png" alt="about-shape"
-                                    class="about-three__shape">
-                                <div class="about-three__shape-box"></div><!-- /.about-three__shape-box -->
-                            </div><!-- /.about-three__image__inner -->
-                        </div><!-- /.about-three__image -->
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                        <div class="about-three__content">
-                            <div class="sec-title">
+                                        <img src="assets/images/nepali-roots/about/about3.jpg" alt="about"
+                                            class="about-three__image__one">
+                                        <img src="assets/images/nepali-roots/about/about4.png" alt="about"
+                                            class="about-three__image__two">
+                                        <div class="about-three__experience"
+                                            style="background-image: url(assets/images/shapes/about-shape-3-2.png);">
+                                            <div class="about-three__experience__content">
+                                                <h3 class="about-three__experience__title">Together</h3>
+                                                <!-- /.about-three__experience__title -->
+                                                <p class="about-three__experience__text">Empowering<br>Nepali
+                                                    Professionals
+                                                </p>
+                                                <!-- /.about-three__experience__text -->
+                                            </div><!-- /.about-three__experience__content -->
+                                        </div><!-- /.about-three__experience -->
+                                        <img src="assets/images/shapes/about-shape-3-1.png" alt="about-shape"
+                                            class="about-three__shape">
+                                        <div class="about-three__shape-box"></div><!-- /.about-three__shape-box -->
+                                    </div><!-- /.about-three__image__inner -->
+                                </div><!-- /.about-three__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6">
+                                <div class="about-three__content">
+                                    <div class="sec-title">
 
-                                <h6 class="sec-title__tagline @@extraClassName">ABOUT NEPALI ROOTS</h6>
-                                <!-- /.sec-title__tagline -->
+                                        <h6 class="sec-title__tagline @@extraClassName">ABOUT NEPALI ROOTS</h6>
+                                        <!-- /.sec-title__tagline -->
 
-                                <h3 class="sec-title__title">Helping Each Other Can Make World <span
-                                        class='sec-title__title__inner'>Better</span></h3><!-- /.sec-title__title -->
-                            </div><!-- /.sec-title -->
-                            <p class="about-three__text about-three__text--one">Empowering Nepali Professionals in
-                                Germany:
-                                Connecting, Educating, and Supporting Growth and Well-being within Our Community</p>
-                            <!-- /.about-three__text -->
-                            <p class="about-three__text about-three__text--two">
-                                Our mission is to connect Nepali professionals in Germany, fostering a supportive
-                                network where members can help each other achieve excellence in their professional,
-                                career, and personal growth. We are dedicated to offering educational workshops,
-                                training sessions, and webinars on a variety of topics that benefit the Nepali
-                                community. Additionally, we believe in collaborating with Nepali educational
-                                institutions to elevate their educational standards.
-                                We also provide support to individuals in managing their mental well-being throughout
-                                their professional journey.</p>
-                            <!-- /.about-three__text -->
+                                        <h3 class="sec-title__title">Helping Each Other Can Make World <span
+                                                class='sec-title__title__inner'>Better</span></h3>
+                                        <!-- /.sec-title__title -->
+                                    </div><!-- /.sec-title -->
+                                    <p class="about-three__text about-three__text--one">Empowering Nepali Professionals
+                                        in
+                                        Germany:
+                                        Connecting, Educating, and Supporting Growth and Well-being within Our Community
+                                    </p>
+                                    <!-- /.about-three__text -->
+                                    <p class="about-three__text about-three__text--two">
+                                        Our mission is to connect Nepali professionals in Germany, fostering a
+                                        supportive
+                                        network where members can help each other achieve excellence in their
+                                        professional,
+                                        career, and personal growth. We are dedicated to offering educational workshops,
+                                        training sessions, and webinars on a variety of topics that benefit the Nepali
+                                        community. Additionally, we believe in collaborating with Nepali educational
+                                        institutions to elevate their educational standards.
+                                        We also provide support to individuals in managing their mental well-being
+                                        throughout
+                                        their professional journey.</p>
+                                    <!-- /.about-three__text -->
 
 
-                        </div><!-- /.about-three__content -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.about-three -->
+                                </div><!-- /.about-three__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </section><!-- /.about-three -->
 
-        <section class="video-one">
-            <div class="video-one__bg cleenhearts-jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%"
-                style="background-image: url(assets/images/backgrounds/help-donate-bg-1-1.jpg);"></div>
-            <!-- /.video-one__bg -->
-            <div class="container">
-                <h2 class="video-one__title">A BOND BEYOND
-                    <!-- <span class="video-one__title__two"></span>
+                <section class="video-one">
+                    <div class="video-one__bg cleenhearts-jarallax" data-jarallax data-speed="0.3"
+                        data-imgPosition="50% -100%"
+                        style="background-image: url(assets/images/backgrounds/help-donate-bg-1-1.jpg);"></div>
+                    <!-- /.video-one__bg -->
+                    <div class="container">
+                        <h2 class="video-one__title">A BOND BEYOND
+                            <!-- <span class="video-one__title__two"></span>
                     <span class="video-one__title__one">BOND</span>
                     <span class="video-one__title__two">BEYOND</span> -->
 
-                    BORDERS
-                </h2>
-                <!-- /.video-one__title -->
-                <!-- <a href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                            BORDERS
+                        </h2>
+                        <!-- /.video-one__title -->
+                        <!-- <a href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                     class="video-one__button video-button video-popup">
                     <span class="icon-play"></span>
                     <i class="video-button__ripple"></i>
                 </a> -->
-                <!-- /.video-one__button -->
-            </div><!-- /.container -->
-        </section><!-- /.video-one -->
+                        <!-- /.video-one__button -->
+                    </div><!-- /.container -->
+                </section><!-- /.video-one -->
 
-        <section class="donations-three section-space-top">
-            <div class="container">
-                <div class="donations-three__tabs-box tabs-box">
-                    <div class="donations-three__top">
-                        <div class="row gutter-y-40 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="sec-title">
+                <section class="donations-three section-space-top" id="pastprograms">
+                    <div class="container">
+                        <div class="donations-three__tabs-box tabs-box">
+                            <div class="donations-three__top">
+                                <div class="row gutter-y-40 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="sec-title">
 
-                                    <h6 class="sec-title__tagline @@extraClassName">Past Programs or Events</h6>
-                                    <!-- /.sec-title__tagline -->
+                                            <h6 class="sec-title__tagline @@extraClassName">Past Programs or Events</h6>
+                                            <!-- /.sec-title__tagline -->
 
-                                    <h3 class="sec-title__title">Our
-                                        <span class='sec-title__title__inner'>Programs</span>
-                                    </h3>
-                                    <!-- /.sec-title__title -->
-                                </div><!-- /.sec-title -->
-                            </div><!-- /.col-lg-6 -->
-                            <div class="col-lg-6">
-                                <ul class="tab-buttons">
-                                    <li data-tab="#networking"
-                                        class="donations-three__btn tab-btn active-btn wow animated fadeInUp"
-                                        data-wow-delay="00ms" data-wow-duration="1500ms"><span>Networking Events</span>
-                                    </li>
+                                            <h3 class="sec-title__title">Our
+                                                <span class='sec-title__title__inner'>Past Programs</span>
+                                            </h3>
+                                            <!-- /.sec-title__title -->
+                                        </div><!-- /.sec-title -->
+                                    </div><!-- /.col-lg-6 -->
+                                    <div class="col-lg-6">
+                                        <ul class="tab-buttons">
+                                            <li data-tab="#networking"
+                                                class="donations-three__btn tab-btn active-btn wow animated fadeInUp"
+                                                data-wow-delay="00ms" data-wow-duration="1500ms"><span>Networking
+                                                    Events</span>
+                                            </li>
 
-                                    <li data-tab="#workshops" class="donations-three__btn tab-btn wow animated fadeInUp"
-                                        data-wow-delay="400ms" data-wow-duration="1500ms"><span>Workshops &
-                                            Webinars</span>
-                                    </li>
+                                            <li data-tab="#workshops"
+                                                class="donations-three__btn tab-btn wow animated fadeInUp"
+                                                data-wow-delay="400ms" data-wow-duration="1500ms"><span>Workshops &
+                                                    Webinars</span>
+                                            </li>
 
-                                    <li data-tab="#podcast" class="donations-three__btn tab-btn wow animated fadeInUp"
-                                        data-wow-delay="600ms" data-wow-duration="1500ms"><span>Podcasts</span>
-                                    </li>
-                                </ul><!-- /.tab-buttons -->
-                            </div><!-- /.col-lg-6 -->
-                        </div><!-- /.row -->
-                    </div><!-- /.donations-three__top -->
-                    <div class="tabs-content">
-                        <div class="tab active-tab animated fadeInUp" data-wow-delay="200ms" id="networking"
-                            style="display: block;">
-                            <div class="donations-three__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-theme owl-carousel"
-                                data-owl-options='{
+                                            <li data-tab="#podcast"
+                                                class="donations-three__btn tab-btn wow animated fadeInUp"
+                                                data-wow-delay="600ms" data-wow-duration="1500ms"><span>Podcasts</span>
+                                            </li>
+                                        </ul><!-- /.tab-buttons -->
+                                    </div><!-- /.col-lg-6 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.donations-three__top -->
+                            <div class="tabs-content">
+                                <div class="tab active-tab animated fadeInUp" data-wow-delay="200ms" id="networking"
+                                    style="display: block;">
+                                    <div class="donations-three__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-theme owl-carousel"
+                                        data-owl-options='{
                         "items": 3,
                         "margin": 30,
                         "smartSpeed": 700,
@@ -597,646 +265,600 @@
                             }
                         }
                         }'>
-                                <div class="item">
-                                    <div class="donation-card-two donation-card @@extraClassName">
-                                        <div class="donation-card__bg"
-                                            style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
-                                        </div><!-- /.donation-card__bg -->
-                                        <h3 class="donation-card__title">
-                                            <a href="donation-details-right.html">
-                                                Semi Informal GIZ-Nepal Meetup
-                                            </a>
-                                        </h3>
-                                        <!-- /.donation-card__title -->
-                                        <a href="donation-details-right.html" class="donation-card__image">
-                                            <img src="assets/images/donations/donation-1-1.jpg"
-                                                alt="Give African Children's Good medical support">
-                                            <div class="donation-card__category">Networking</div>
-                                            <!-- /.donation-card__category -->
-                                        </a><!-- /.donation-card__image -->
-                                        <div class="donation-card__content">
+                                        <div class="item">
+                                            <div class="donation-card-two donation-card @@extraClassName">
+                                                <div class="donation-card__bg"
+                                                    style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                                                </div><!-- /.donation-card__bg -->
+                                                <h3 class="donation-card__title">
+                                                    <a href="donation-details-right.html">
+                                                        Semi Informal GIZ-Nepal Meetup
+                                                    </a>
+                                                </h3>
+                                                <!-- /.donation-card__title -->
+                                                <a href="donation-details-right.html" class="donation-card__image">
+                                                    <img src="assets/images/donations/donation-1-1.jpg"
+                                                        alt="Give African Children's Good medical support">
+                                                    <div class="donation-card__category">Networking</div>
+                                                    <!-- /.donation-card__category -->
+                                                </a><!-- /.donation-card__image -->
+                                                <div class="donation-card__content">
 
-                                            <!-- /.donation-card__progress -->
-                                            <p class="donation-card-two__text">
-                                                The meetup was organized to assist individuals interested in
-                                                contributing to Nepal by participating in GIZ-Nepal's program.
-                                            </p>
-                                            <!-- /.donation-card-two__text -->
-                                            <a href="donation-details-right.html"
-                                                class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
+                                                    <!-- /.donation-card__progress -->
+                                                    <p class="donation-card-two__text">
+                                                        The meetup was organized to assist individuals interested in
+                                                        contributing to Nepal by participating in GIZ-Nepal's program.
+                                                    </p>
+                                                    <!-- /.donation-card-two__text -->
+                                                    <a href="donation-details-right.html"
+                                                        class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
+                                                        <div class="cleenhearts-btn__icon-box">
+                                                            <div class="cleenhearts-btn__icon-box__inner"><span
+                                                                    class="icon-duble-arrow"></span></div>
+                                                        </div>
+                                                        <span class="cleenhearts-btn__text">Details</span>
+                                                    </a><!-- /.donation-card__btn -->
+                                                </div><!-- /.donation-card__content -->
+                                            </div><!-- /.donation-card-two donation-card -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="donation-card-two donation-card @@extraClassName">
+                                                <div class="donation-card__bg"
+                                                    style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                                                </div><!-- /.donation-card__bg -->
+                                                <h3 class="donation-card__title">
+                                                    <a href="donation-details-right.html">
+                                                        Webinar: How to register a company in Germany?
+                                                    </a>
+                                                </h3>
+                                                <!-- /.donation-card__title -->
+                                                <a href="donation-details-right.html" class="donation-card__image">
+                                                    <img src="assets/images/donations/donation-1-9.jpg"
+                                                        alt="Let’s education for children get good life">
+                                                    <div class="donation-card__category">Educational</div>
+                                                    <!-- /.donation-card__category -->
+                                                </a><!-- /.donation-card__image -->
+                                                <div class="donation-card__content">
+
+                                                    <p class="donation-card-two__text">
+                                                        We conducted a webinar to support individuals interested in
+                                                        starting
+                                                        a
+                                                        business in Germany.
+                                                    </p>
+                                                    <!-- /.donation-card-two__text -->
+                                                    <a href="donation-details-right.html"
+                                                        class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
+                                                        <div class="cleenhearts-btn__icon-box">
+                                                            <div class="cleenhearts-btn__icon-box__inner"><span
+                                                                    class="icon-duble-arrow"></span></div>
+                                                        </div>
+                                                        <span class="cleenhearts-btn__text">Details</span>
+                                                    </a><!-- /.donation-card__btn -->
+                                                </div><!-- /.donation-card__content -->
+                                            </div><!-- /.donation-card-two donation-card -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="donation-card-two donation-card @@extraClassName">
+                                                <div class="donation-card__bg"
+                                                    style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                                                </div><!-- /.donation-card__bg -->
+                                                <h3 class="donation-card__title">
+                                                    <a href="donation-details-right.html">
+                                                        Webinar: Parenthood preparation
+                                                    </a>
+                                                </h3><!-- /.donation-card__title -->
+                                                <a href="donation-details-right.html" class="donation-card__image">
+                                                    <img src="assets/images/donations/donation-1-3.jpg"
+                                                        alt="Raise Funds For Clean & Healthy Food">
+                                                    <div class="donation-card__category">Educational</div>
+                                                    <!-- /.donation-card__category -->
+                                                </a><!-- /.donation-card__image -->
+                                                <div class="donation-card__content">
+
+                                                    <p class="donation-card-two__text">
+                                                        Hosted a webinar to guide expecting parents on essential steps
+                                                        during
+                                                        pregnancy and post-delivery.
+                                                    </p>
+                                                    <!-- /.donation-card-two__text -->
+                                                    <a href="donation-details-right.html"
+                                                        class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
+                                                        <div class="cleenhearts-btn__icon-box">
+                                                            <div class="cleenhearts-btn__icon-box__inner"><span
+                                                                    class="icon-duble-arrow"></span></div>
+                                                        </div>
+                                                        <span class="cleenhearts-btn__text">Details</span>
+                                                    </a><!-- /.donation-card__btn -->
+                                                </div><!-- /.donation-card__content -->
+                                            </div><!-- /.donation-card-two donation-card -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="donation-card-two donation-card @@extraClassName">
+                                                <div class="donation-card__bg"
+                                                    style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                                                </div><!-- /.donation-card__bg -->
+                                                <h3 class="donation-card__title">
+                                                    <a href="donation-details-right.html">
+                                                        Podcast: Tech job experience sharing discussion
+                                                    </a>
+                                                </h3>
+                                                <!-- /.donation-card__title -->
+                                                <a href="donation-details-right.html" class="donation-card__image">
+                                                    <img src="assets/images/donations/donation-1-4.jpg"
+                                                        alt="Quisque dictum ipsum eget accumsan dignissim. Quisque">
+                                                    <div class="donation-card__category">Podcast</div>
+                                                    <!-- /.donation-card__category -->
+                                                </a><!-- /.donation-card__image -->
+                                                <div class="donation-card__content">
+
+                                                    <p class="donation-card-two__text">
+                                                        We hosted a podcast with seasoned tech professionals working in
+                                                        Germany,
+                                                        discussing their struggles and experiences in securing a job.
+                                                    </p>
+                                                    <!-- /.donation-card-two__text -->
+                                                    <a href="donation-details-right.html"
+                                                        class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
+                                                        <div class="cleenhearts-btn__icon-box">
+                                                            <div class="cleenhearts-btn__icon-box__inner"><span
+                                                                    class="icon-duble-arrow"></span></div>
+                                                        </div>
+                                                        <span class="cleenhearts-btn__text">Details</span>
+                                                    </a><!-- /.donation-card__btn -->
+                                                </div><!-- /.donation-card__content -->
+                                            </div><!-- /.donation-card-two donation-card -->
+                                        </div><!-- /.item -->
+
+
+                                    </div><!-- /.donations-three__carousel -->
+                                </div><!-- /.charity -->
+
+
+                            </div><!-- /.tabs-content -->
+                        </div><!-- /.tabs-box -->
+                    </div><!-- /.container -->
+                </section><!-- /.donations-three section-space-top -->
+
+
+
+                <section class="donations-gift section-space-bottom">
+                    <div class="container-fluid">
+                        <div class="row gutter-y-30">
+                            <div class="donations-gift__col col-lg-6 wow fadeInUp" data-wow-duration="1500ms"
+                                data-wow-delay="00ms">
+                                <div class="donation-information">
+                                    <div class="donation-information__bg"
+                                        style='background-image: url(assets/images/resources/donation-information-bg-1-2.jpg)'>
+                                    </div><!-- /.donation-information__bg -->
+                                    <div class="donation-information__content">
+                                        <h3 class="donation-information__title">Join us & become a volunteer</h3>
+                                        <!-- /.donation-information__title -->
+                                        <p class="donation-information__text">
+                                            We aim to connect Nepali professionals in Germany, fostering a supportive
+                                            network where members can help each other achieve excellence in their
+                                            professional,
+                                            career, and personal growth.
+                                        </p>
+                                        <!-- /.donation-information__text -->
+                                        <ul class="donation-information__list">
+                                            <li>
+                                                <i class="fas fa-check"></i>
+                                                <span>Connect</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check"></i>
+                                                <span>Learn</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check"></i>
+                                                <span>Share</span>
+                                            </li>
+                                        </ul><!-- /.donation-information__list -->
+                                        <div class="donation-information__bottom">
+                                            <a href="become-a-volunteer.html"
+                                                class="cleenhearts-btn cleenhearts-btn--border">
                                                 <div class="cleenhearts-btn__icon-box">
                                                     <div class="cleenhearts-btn__icon-box__inner"><span
                                                             class="icon-duble-arrow"></span></div>
                                                 </div>
-                                                <span class="cleenhearts-btn__text">Details</span>
-                                            </a><!-- /.donation-card__btn -->
-                                        </div><!-- /.donation-card__content -->
-                                    </div><!-- /.donation-card-two donation-card -->
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="donation-card-two donation-card @@extraClassName">
-                                        <div class="donation-card__bg"
-                                            style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
-                                        </div><!-- /.donation-card__bg -->
-                                        <h3 class="donation-card__title">
-                                            <a href="donation-details-right.html">
-                                                Webinar: How to register a company in Germany?
+                                                <span class="cleenhearts-btn__text">Become A Volunteer</span>
                                             </a>
-                                        </h3>
-                                        <!-- /.donation-card__title -->
-                                        <a href="donation-details-right.html" class="donation-card__image">
-                                            <img src="assets/images/donations/donation-1-9.jpg"
-                                                alt="Let’s education for children get good life">
-                                            <div class="donation-card__category">Educational</div>
-                                            <!-- /.donation-card__category -->
-                                        </a><!-- /.donation-card__image -->
-                                        <div class="donation-card__content">
 
-                                            <p class="donation-card-two__text">
-                                                We conducted a webinar to support individuals interested in starting a
-                                                business in Germany.
-                                            </p>
-                                            <!-- /.donation-card-two__text -->
-                                            <a href="donation-details-right.html"
-                                                class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Details</span>
-                                            </a><!-- /.donation-card__btn -->
-                                        </div><!-- /.donation-card__content -->
-                                    </div><!-- /.donation-card-two donation-card -->
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="donation-card-two donation-card @@extraClassName">
-                                        <div class="donation-card__bg"
-                                            style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
-                                        </div><!-- /.donation-card__bg -->
-                                        <h3 class="donation-card__title">
-                                            <a href="donation-details-right.html">
-                                                Webinar: Parenthood preparation
-                                            </a>
-                                        </h3><!-- /.donation-card__title -->
-                                        <a href="donation-details-right.html" class="donation-card__image">
-                                            <img src="assets/images/donations/donation-1-3.jpg"
-                                                alt="Raise Funds For Clean & Healthy Food">
-                                            <div class="donation-card__category">Educational</div>
-                                            <!-- /.donation-card__category -->
-                                        </a><!-- /.donation-card__image -->
-                                        <div class="donation-card__content">
+                                        </div><!-- /.donation-information__bottom -->
+                                    </div><!-- /.donation-information__content -->
+                                </div><!-- /.donation-information -->
+                                <div class="donations-gift__shapes">
+                                    <div class="donations-gift__shape donations-gift__shape--one"></div>
+                                    <!-- /.donations-gift__shape__one -->
+                                </div><!-- /.donations-gift__shapes -->
+                            </div><!-- /.donations-gift__col col-lg-6 -->
+                            <div class="donations-gift__col col-lg-6 wow fadeInUp" data-wow-duration="1500ms"
+                                data-wow-delay="200ms">
+                                <div class="gift-card">
+                                    <div class="gift-card__bg"
+                                        style='background-image: url(assets/images/resources/gift-bg-1-2.jpg)'></div>
+                                    <!-- /.gift-card__bg -->
+                                    <div class="gift-card__content">
+                                        <h3 class="gift-card__title">
+                                            Curious about our activities?
+                                        </h3><!-- /.gift-card__title -->
+                                        <p class="gift-card__text">
+                                            We regularly host informational webinars, podcasts, and meetups.
+                                        </p><!-- /.gift-card__text -->
 
-                                            <p class="donation-card-two__text">
-                                                Hosted a webinar to guide expecting parents on essential steps during
-                                                pregnancy and post-delivery.
-                                            </p>
-                                            <!-- /.donation-card-two__text -->
-                                            <a href="donation-details-right.html"
-                                                class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Details</span>
-                                            </a><!-- /.donation-card__btn -->
-                                        </div><!-- /.donation-card__content -->
-                                    </div><!-- /.donation-card-two donation-card -->
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="donation-card-two donation-card @@extraClassName">
-                                        <div class="donation-card__bg"
-                                            style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
-                                        </div><!-- /.donation-card__bg -->
-                                        <h3 class="donation-card__title">
-                                            <a href="donation-details-right.html">
-                                                Podcast: Tech job experience sharing discussion
-                                            </a>
-                                        </h3>
-                                        <!-- /.donation-card__title -->
-                                        <a href="donation-details-right.html" class="donation-card__image">
-                                            <img src="assets/images/donations/donation-1-4.jpg"
-                                                alt="Quisque dictum ipsum eget accumsan dignissim. Quisque">
-                                            <div class="donation-card__category">Podcast</div>
-                                            <!-- /.donation-card__category -->
-                                        </a><!-- /.donation-card__image -->
-                                        <div class="donation-card__content">
-
-                                            <p class="donation-card-two__text">
-                                                We hosted a podcast with seasoned tech professionals working in Germany,
-                                                discussing their struggles and experiences in securing a job.
-                                            </p>
-                                            <!-- /.donation-card-two__text -->
-                                            <a href="donation-details-right.html"
-                                                class="donation-card__btn cleenhearts-btn cleenhearts-btn--border-base">
-                                                <div class="cleenhearts-btn__icon-box">
-                                                    <div class="cleenhearts-btn__icon-box__inner"><span
-                                                            class="icon-duble-arrow"></span></div>
-                                                </div>
-                                                <span class="cleenhearts-btn__text">Details</span>
-                                            </a><!-- /.donation-card__btn -->
-                                        </div><!-- /.donation-card__content -->
-                                    </div><!-- /.donation-card-two donation-card -->
-                                </div><!-- /.item -->
-
-
-                            </div><!-- /.donations-three__carousel -->
-                        </div><!-- /.charity -->
-
-
-                    </div><!-- /.tabs-content -->
-                </div><!-- /.tabs-box -->
-            </div><!-- /.container -->
-        </section><!-- /.donations-three section-space-top -->
-
-
-
-        <section class="donations-gift section-space-bottom">
-            <div class="container-fluid">
-                <div class="row gutter-y-30">
-                    <div class="donations-gift__col col-lg-6 wow fadeInUp" data-wow-duration="1500ms"
-                        data-wow-delay="00ms">
-                        <div class="donation-information">
-                            <div class="donation-information__bg"
-                                style='background-image: url(assets/images/resources/donation-information-bg-1-2.jpg)'>
-                            </div><!-- /.donation-information__bg -->
-                            <div class="donation-information__content">
-                                <h3 class="donation-information__title">Join us & become a volunteer</h3>
-                                <!-- /.donation-information__title -->
-                                <p class="donation-information__text">
-                                    We aim to connect Nepali professionals in Germany, fostering a supportive
-                                    network where members can help each other achieve excellence in their professional,
-                                    career, and personal growth.
-                                </p>
-                                <!-- /.donation-information__text -->
-                                <ul class="donation-information__list">
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Connect</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Learn</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Share</span>
-                                    </li>
-                                </ul><!-- /.donation-information__list -->
-                                <div class="donation-information__bottom">
-                                    <a href="become-a-volunteer.html" class="cleenhearts-btn cleenhearts-btn--border">
-                                        <div class="cleenhearts-btn__icon-box">
-                                            <div class="cleenhearts-btn__icon-box__inner"><span
-                                                    class="icon-duble-arrow"></span></div>
-                                        </div>
-                                        <span class="cleenhearts-btn__text">Become A Volunteer</span>
-                                    </a>
-
-                                </div><!-- /.donation-information__bottom -->
-                            </div><!-- /.donation-information__content -->
-                        </div><!-- /.donation-information -->
-                        <div class="donations-gift__shapes">
-                            <div class="donations-gift__shape donations-gift__shape--one"></div>
-                            <!-- /.donations-gift__shape__one -->
-                        </div><!-- /.donations-gift__shapes -->
-                    </div><!-- /.donations-gift__col col-lg-6 -->
-                    <div class="donations-gift__col col-lg-6 wow fadeInUp" data-wow-duration="1500ms"
-                        data-wow-delay="200ms">
-                        <div class="gift-card">
-                            <div class="gift-card__bg"
-                                style='background-image: url(assets/images/resources/gift-bg-1-2.jpg)'></div>
-                            <!-- /.gift-card__bg -->
-                            <div class="gift-card__content">
-                                <h3 class="gift-card__title">
-                                    Curious about our activities?
-                                </h3><!-- /.gift-card__title -->
-                                <p class="gift-card__text">
-                                    We regularly host informational webinars, podcasts, and meetups.
-                                </p><!-- /.gift-card__text -->
-
-                                <ul class="donation-information__list">
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Webinars</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Meetups</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check"></i>
-                                        <span>Social Collaboration</span>
-                                    </li>
-                                </ul><!-- /.donation-information__list -->
-
-                                <a href="donate.html" class="cleenhearts-btn cleenhearts-btn--border">
-                                    <div class="cleenhearts-btn__icon-box">
-                                        <div class="cleenhearts-btn__icon-box__inner"><span
-                                                class="icon-duble-arrow"></span></div>
-                                    </div>
-                                    <span class="cleenhearts-btn__text">Follow our activites</span>
-                                </a>
-                            </div><!-- /.gift-card__content -->
-                        </div><!-- /.gift-card -->
-                        <div class="donations-gift__shapes">
-                            <div class="donations-gift__shape donations-gift__shape--two"></div>
-                            <!-- /.donations-gift__shape__two -->
-                        </div><!-- /.donations-gift__shapes -->
-                    </div><!-- /.donations-gift__col col-lg-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </section><!-- /.donations-gift section-space-bottom -->
-        <section class="events-three">
-            <div class="container">
-                <div class="events-three__bg" style="background-image: url('assets/images/shapes/event-bg-3.png');">
-                    <div class="sec-title">
-
-                        <h6 class="sec-title__tagline sec-title__tagline--center">Events in Germany or Nepal</h6>
-                        <!-- /.sec-title__tagline -->
-
-                        <h3 class="sec-title__title">See Upcoming <span class="sec-title__title__inner">Events</span>
-                        </h3><!-- /.sec-title__title -->
-                    </div><!-- /.sec-title -->
-                    <div class="horizontal-accordion">
-                        <div class="events-three__card card choice">
-                            <div class="card-body">
-                                <div class="events-three__card__top"
-                                    style="background-image: url('assets/images/events/event-3-1.jpg');">
-                                    <h4 class="events-three__card__title">
-                                        Webinar: How to start a company in Germany?
-                                    </h4>
-                                    <span
-                                        class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
-                                </div><!-- /.accordian-title -->
-                                <div class="event-card-three">
-                                    <div class="event-card-three__date-wrapper">
-                                        <div class="event-card-three__time">
-                                            <span class="event-card-three__time__icon fa fa-clock"></span>10:00 aM -
-                                            2.00 PM
-                                        </div><!-- /.event-card-three__time -->
-                                        <div class="event-card-three__date">03 Sep</div>
-                                        <!-- /.event-card-three__date -->
-                                    </div>
-                                    <div class="event-card-three__content">
-                                        <h4 class="event-card-three__title"><a href="event-details-right.html">
-                                                Let’s
-                                                education for children get good life style with go us</a></h4>
-                                        <!-- /.event-card-three__title -->
-                                        <div class="event-card-three__text">
-                                            Dicta sunt explicabo. Nemo enim ipsam
-                                            voluptatem quia voluptas sit aspernaturaut odit</div>
-                                        <!-- /.event-card-three__text -->
-                                        <ul class="event-card-three__meta">
+                                        <ul class="donation-information__list">
                                             <li>
-                                                <h5 class="event-card-three__meta__title">Organizer</h5>
-                                                Nepali Roots
+                                                <i class="fas fa-check"></i>
+                                                <span>Webinars</span>
                                             </li>
                                             <li>
-                                                <h5 class="event-card-three__meta__title">
-                                                    <span class="icon-location"></span> Location
-                                                </h5>
-                                                Online
-                                            </li>
-                                        </ul><!-- /.event-card-three__meta -->
-                                    </div><!-- /.event-card-three__content -->
-                                </div><!-- /.event-card-three -->
-                            </div>
-                        </div>
-                        <div class="events-three__card card choice">
-                            <div class="card-body">
-                                <div class="events-three__card__top"
-                                    style="background-image: url('assets/images/events/event-3-2.jpg');">
-                                    <h4 class="events-three__card__title">
-                                        Tech job search experience sharing in Germany
-                                    </h4>
-                                    <span
-                                        class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
-                                </div><!-- /.accordian-title -->
-                                <div class="event-card-three">
-                                    <div class="event-card-three__date-wrapper">
-                                        <div class="event-card-three__time">
-                                            <span class="event-card-three__time__icon fa fa-clock"></span>10:00 aM -
-                                            2.00 PM
-                                        </div><!-- /.event-card-three__time -->
-                                        <div class="event-card-three__date">03 Sep</div>
-                                        <!-- /.event-card-three__date -->
-                                    </div>
-                                    <div class="event-card-three__content">
-                                        <h4 class="event-card-three__title"><a href="event-details-right.html">
-                                                Let’s
-                                                education for children get good life style with go us</a></h4>
-                                        <!-- /.event-card-three__title -->
-                                        <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim ipsam
-                                            voluptatem quia voluptas sit aspernaturaut odit</div>
-                                        <!-- /.event-card-three__text -->
-                                        <ul class="event-card-three__meta">
-                                            <li>
-                                                <h5 class="event-card-three__meta__title">Organizer</h5>
-                                                Nepali Roots
+                                                <i class="fas fa-check"></i>
+                                                <span>Meetups</span>
                                             </li>
                                             <li>
-                                                <h5 class="event-card-three__meta__title">
-                                                    <span class="icon-location"></span> Location
-                                                </h5>
-                                                Online
+                                                <i class="fas fa-check"></i>
+                                                <span>Social Collaboration</span>
                                             </li>
-                                        </ul><!-- /.event-card-three__meta -->
-                                    </div><!-- /.event-card-three__content -->
-                                </div><!-- /.event-card-three -->
-                            </div>
-                        </div>
-                        <div class="events-three__card card choice expand">
-                            <div class="card-body">
-                                <div class="events-three__card__top"
-                                    style="background-image: url('assets/images/events/event-3-3.jpg');">
-                                    <h4 class="events-three__card__title">
-                                        Preparing for Parenthood: What You Need to Know
-                                    </h4>
-                                    <span
-                                        class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
-                                </div><!-- /.accordian-title -->
-                                <div class="event-card-three">
-                                    <div class="event-card-three__date-wrapper">
-                                        <div class="event-card-three__time">
-                                            <span class="event-card-three__time__icon fa fa-clock"></span>10:00 aM -
-                                            2.00 PM
-                                        </div><!-- /.event-card-three__time -->
-                                        <div class="event-card-three__date">03 Sep</div>
-                                        <!-- /.event-card-three__date -->
-                                    </div>
-                                    <div class="event-card-three__content">
-                                        <h4 class="event-card-three__title"><a href="event-details-right.html">Let’s
-                                                education for children get good life style with go us</a></h4>
-                                        <!-- /.event-card-three__title -->
-                                        <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim ipsam
-                                            voluptatem quia voluptas sit aspernaturaut odit</div>
-                                        <!-- /.event-card-three__text -->
-                                        <ul class="event-card-three__meta">
-                                            <li>
-                                                <h5 class="event-card-three__meta__title">Organizer</h5>
-                                                Nepali Roots
-                                            </li>
-                                            <li>
-                                                <h5 class="event-card-three__meta__title">
-                                                    <span class="icon-location"></span>
-                                                    Location
-                                                </h5>
-                                                Online
-                                            </li>
-                                        </ul><!-- /.event-card-three__meta -->
-                                    </div><!-- /.event-card-three__content -->
-                                </div><!-- /.event-card-three -->
-                            </div>
-                        </div>
-                        <div class="events-three__card card choice">
-                            <div class="card-body">
-                                <div class="events-three__card__top"
-                                    style="background-image: url('assets/images/events/event-3-4.jpg');">
-                                    <h4 class="events-three__card__title">
-                                        How does the Ausbildung process work in Germany?
-                                    </h4>
-                                    <span
-                                        class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
-                                </div><!-- /.accordian-title -->
-                                <div class="event-card-three">
-                                    <div class="event-card-three__date-wrapper">
-                                        <div class="event-card-three__time">
-                                            <span class="event-card-three__time__icon fa fa-clock"></span>10:00 aM -
-                                            2.00 PM
-                                        </div><!-- /.event-card-three__time -->
-                                        <div class="event-card-three__date">03 Sep</div>
-                                        <!-- /.event-card-three__date -->
-                                    </div>
-                                    <div class="event-card-three__content">
-                                        <h4 class="event-card-three__title"><a href="event-details-right.html">Let’s
-                                                education for children get good life style with go us</a></h4>
-                                        <!-- /.event-card-three__title -->
-                                        <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim ipsam
-                                            voluptatem quia voluptas sit aspernaturaut odit</div>
-                                        <!-- /.event-card-three__text -->
-                                        <ul class="event-card-three__meta">
-                                            <li>
-                                                <h5 class="event-card-three__meta__title">Organizer</h5>
-                                                Nepali Roots
-                                            </li>
-                                            <li>
-                                                <h5 class="event-card-three__meta__title">
-                                                    <span class="icon-location"></span> Location
-                                                </h5>
-                                                Online
-                                            </li>
-                                        </ul><!-- /.event-card-three__meta -->
-                                    </div><!-- /.event-card-three__content -->
-                                </div><!-- /.event-card-three -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.container -->
-        </section><!-- /.events-three section-space -->
+                                        </ul><!-- /.donation-information__list -->
 
-
-
-        <section class="faq-one faq-one--about section-space">
-            <div class="faq-one__bg" style="background-image: url('assets/images/backgrounds/faq-bg-2.png');"></div>
-            <!-- /.faq-one__bg -->
-            <div class="container">
-                <div class="row gutter-y-50">
-                    <div class="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="100ms">
-                        <div class="faq-one__image">
-                            <img src="assets/images/faq/faq-1.png" alt="faq-image">
-                        </div><!-- /.faq-one__image -->
-                    </div><!-- /.col-xl-6 col-lg-6 -->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__content">
+                                        <a href="donate.html" class="cleenhearts-btn cleenhearts-btn--border">
+                                            <div class="cleenhearts-btn__icon-box">
+                                                <div class="cleenhearts-btn__icon-box__inner"><span
+                                                        class="icon-duble-arrow"></span></div>
+                                            </div>
+                                            <span class="cleenhearts-btn__text">Follow our activites</span>
+                                        </a>
+                                    </div><!-- /.gift-card__content -->
+                                </div><!-- /.gift-card -->
+                                <div class="donations-gift__shapes">
+                                    <div class="donations-gift__shape donations-gift__shape--two"></div>
+                                    <!-- /.donations-gift__shape__two -->
+                                </div><!-- /.donations-gift__shapes -->
+                            </div><!-- /.donations-gift__col col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container-fluid -->
+                </section><!-- /.donations-gift section-space-bottom -->
+                <section class="events-three">
+                    <div class="container">
+                        <div class="events-three__bg"
+                            style="background-image: url('assets/images/shapes/event-bg-3.png');">
                             <div class="sec-title">
 
-                                <h6 class="sec-title__tagline @@extraClassName">Recently asked questions</h6>
+                                <h6 class="sec-title__tagline sec-title__tagline--center">Events in Germany or Nepal
+                                </h6>
                                 <!-- /.sec-title__tagline -->
 
-                                <h3 class="sec-title__title">People Are Frequently Asking Some <span
-                                        class="sec-title__title__inner">Questions</span></h3><!-- /.sec-title__title -->
+                                <h3 class="sec-title__title">See Upcoming <span
+                                        class="sec-title__title__inner">Events</span>
+                                </h3><!-- /.sec-title__title -->
                             </div><!-- /.sec-title -->
-                            <p class="faq-one__text">We help companies develop powerful corporate social responsibility,
-                                grantmaking, and employee engagement strategies.</p><!-- /.faq-one__text -->
-                            <div class="cleenhearts-accordion wow fadeInUp" data-wow-duration="1500ms"
-                                data-wow-delay="100ms" data-grp-name="cleenhearts-accordion">
-                                <div class="accordion @@extraClassName">
-                                    <div class="accordion-title">
-                                        <h4>
-                                            Do you work with a specific professional domain?
-                                            <span class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
-                                        </h4>
-                                    </div><!-- /.accordian-title -->
-                                    <div class="accordion-content">
-                                        <div class="inner">
-                                            <p>We help companies develop powerful corporate social responsibility,
-                                                grantmaking, and employee engagement strategies.</p>
-                                        </div><!-- /.accordian-content -->
+                            <div class="horizontal-accordion">
+                                <div class="events-three__card card choice">
+                                    <div class="card-body">
+                                        <div class="events-three__card__top"
+                                            style="background-image: url('assets/images/events/event-3-1.jpg');">
+                                            <h4 class="events-three__card__title">
+                                                Webinar: How to start a company in Germany?
+                                            </h4>
+                                            <span
+                                                class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
+                                        </div><!-- /.accordian-title -->
+                                        <div class="event-card-three">
+                                            <div class="event-card-three__date-wrapper">
+                                                <div class="event-card-three__time">
+                                                    <span class="event-card-three__time__icon fa fa-clock"></span>10:00
+                                                    aM -
+                                                    2.00 PM
+                                                </div><!-- /.event-card-three__time -->
+                                                <div class="event-card-three__date">03 Sep</div>
+                                                <!-- /.event-card-three__date -->
+                                            </div>
+                                            <div class="event-card-three__content">
+                                                <h4 class="event-card-three__title"><a href="event-details-right.html">
+                                                        Let’s
+                                                        education for children get good life style with go us</a></h4>
+                                                <!-- /.event-card-three__title -->
+                                                <div class="event-card-three__text">
+                                                    Dicta sunt explicabo. Nemo enim ipsam
+                                                    voluptatem quia voluptas sit aspernaturaut odit</div>
+                                                <!-- /.event-card-three__text -->
+                                                <ul class="event-card-three__meta">
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">Organizer</h5>
+                                                        Nepali Roots
+                                                    </li>
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">
+                                                            <span class="icon-location"></span> Location
+                                                        </h5>
+                                                        Online
+                                                    </li>
+                                                </ul><!-- /.event-card-three__meta -->
+                                            </div><!-- /.event-card-three__content -->
+                                        </div><!-- /.event-card-three -->
                                     </div>
-                                </div><!-- /.accordian-item -->
-                                <div class="accordion active">
-                                    <div class="accordion-title">
-                                        <h4>
-                                            Do you support Nepali startups?
-                                            <span class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
-                                        </h4>
-                                    </div><!-- /.accordian-title -->
-                                    <div class="accordion-content">
-                                        <div class="inner">
-                                            <p>We help companies develop powerful corporate social responsibility,
-                                                grantmaking, and employee engagement strategies.</p>
-                                        </div><!-- /.accordian-content -->
+                                </div>
+                                <div class="events-three__card card choice">
+                                    <div class="card-body">
+                                        <div class="events-three__card__top"
+                                            style="background-image: url('assets/images/events/event-3-2.jpg');">
+                                            <h4 class="events-three__card__title">
+                                                Tech job search experience sharing in Germany
+                                            </h4>
+                                            <span
+                                                class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
+                                        </div><!-- /.accordian-title -->
+                                        <div class="event-card-three">
+                                            <div class="event-card-three__date-wrapper">
+                                                <div class="event-card-three__time">
+                                                    <span class="event-card-three__time__icon fa fa-clock"></span>10:00
+                                                    aM -
+                                                    2.00 PM
+                                                </div><!-- /.event-card-three__time -->
+                                                <div class="event-card-three__date">03 Sep</div>
+                                                <!-- /.event-card-three__date -->
+                                            </div>
+                                            <div class="event-card-three__content">
+                                                <h4 class="event-card-three__title"><a href="event-details-right.html">
+                                                        Let’s
+                                                        education for children get good life style with go us</a></h4>
+                                                <!-- /.event-card-three__title -->
+                                                <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim
+                                                    ipsam
+                                                    voluptatem quia voluptas sit aspernaturaut odit</div>
+                                                <!-- /.event-card-three__text -->
+                                                <ul class="event-card-three__meta">
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">Organizer</h5>
+                                                        Nepali Roots
+                                                    </li>
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">
+                                                            <span class="icon-location"></span> Location
+                                                        </h5>
+                                                        Online
+                                                    </li>
+                                                </ul><!-- /.event-card-three__meta -->
+                                            </div><!-- /.event-card-three__content -->
+                                        </div><!-- /.event-card-three -->
                                     </div>
-                                </div><!-- /.accordian-item -->
-                                <div class="accordion @@extraClassName">
-                                    <div class="accordion-title">
-                                        <h4>
-                                            Is this non profitable organization?
-                                            <span class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
-                                        </h4>
-                                    </div><!-- /.accordian-title -->
-                                    <div class="accordion-content">
-                                        <div class="inner">
-                                            <p>We help companies develop powerful corporate social responsibility,
-                                                grantmaking, and employee engagement strategies.</p>
-                                        </div><!-- /.accordian-content -->
+                                </div>
+                                <div class="events-three__card card choice expand">
+                                    <div class="card-body">
+                                        <div class="events-three__card__top"
+                                            style="background-image: url('assets/images/events/event-3-3.jpg');">
+                                            <h4 class="events-three__card__title">
+                                                Preparing for Parenthood: What You Need to Know
+                                            </h4>
+                                            <span
+                                                class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
+                                        </div><!-- /.accordian-title -->
+                                        <div class="event-card-three">
+                                            <div class="event-card-three__date-wrapper">
+                                                <div class="event-card-three__time">
+                                                    <span class="event-card-three__time__icon fa fa-clock"></span>10:00
+                                                    aM -
+                                                    2.00 PM
+                                                </div><!-- /.event-card-three__time -->
+                                                <div class="event-card-three__date">03 Sep</div>
+                                                <!-- /.event-card-three__date -->
+                                            </div>
+                                            <div class="event-card-three__content">
+                                                <h4 class="event-card-three__title"><a
+                                                        href="event-details-right.html">Let’s
+                                                        education for children get good life style with go us</a></h4>
+                                                <!-- /.event-card-three__title -->
+                                                <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim
+                                                    ipsam
+                                                    voluptatem quia voluptas sit aspernaturaut odit</div>
+                                                <!-- /.event-card-three__text -->
+                                                <ul class="event-card-three__meta">
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">Organizer</h5>
+                                                        Nepali Roots
+                                                    </li>
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">
+                                                            <span class="icon-location"></span>
+                                                            Location
+                                                        </h5>
+                                                        Online
+                                                    </li>
+                                                </ul><!-- /.event-card-three__meta -->
+                                            </div><!-- /.event-card-three__content -->
+                                        </div><!-- /.event-card-three -->
                                     </div>
-                                </div><!-- /.accordian-item -->
+                                </div>
+                                <div class="events-three__card card choice">
+                                    <div class="card-body">
+                                        <div class="events-three__card__top"
+                                            style="background-image: url('assets/images/events/event-3-4.jpg');">
+                                            <h4 class="events-three__card__title">
+                                                How does the Ausbildung process work in Germany?
+                                            </h4>
+                                            <span
+                                                class="events-three__card__icon icon-plus"></span><!-- /.accordion-title__icon -->
+                                        </div><!-- /.accordian-title -->
+                                        <div class="event-card-three">
+                                            <div class="event-card-three__date-wrapper">
+                                                <div class="event-card-three__time">
+                                                    <span class="event-card-three__time__icon fa fa-clock"></span>10:00
+                                                    aM -
+                                                    2.00 PM
+                                                </div><!-- /.event-card-three__time -->
+                                                <div class="event-card-three__date">03 Sep</div>
+                                                <!-- /.event-card-three__date -->
+                                            </div>
+                                            <div class="event-card-three__content">
+                                                <h4 class="event-card-three__title"><a
+                                                        href="event-details-right.html">Let’s
+                                                        education for children get good life style with go us</a></h4>
+                                                <!-- /.event-card-three__title -->
+                                                <div class="event-card-three__text">Dicta sunt explicabo. Nemo enim
+                                                    ipsam
+                                                    voluptatem quia voluptas sit aspernaturaut odit</div>
+                                                <!-- /.event-card-three__text -->
+                                                <ul class="event-card-three__meta">
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">Organizer</h5>
+                                                        Nepali Roots
+                                                    </li>
+                                                    <li>
+                                                        <h5 class="event-card-three__meta__title">
+                                                            <span class="icon-location"></span> Location
+                                                        </h5>
+                                                        Online
+                                                    </li>
+                                                </ul><!-- /.event-card-three__meta -->
+                                            </div><!-- /.event-card-three__content -->
+                                        </div><!-- /.event-card-three -->
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- /.faq-one__content -->
-                    </div><!-- /.col-xl-6 col-lg-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-            <div class="faq-one__shape">
-                <img src="assets/images/shapes/faq-shape-1-1.png" alt="faq-shape" class="faq-one__shape__one">
-                <img src="assets/images/shapes/faq-shape-1-2.png" alt="faq-shape" class="faq-one__shape__two">
-            </div><!-- /.faq-one__shape -->
-        </section><!-- /.faq-one section-space -->
+                        </div>
+                    </div><!-- /.container -->
+                </section><!-- /.events-three section-space -->
 
 
-        <section class="about-info-two">
-            <div class="container">
-                <div class="about-info-two__wrapper">
-                    <div class="about-info-two__bg"
-                        style="background-image: url('assets/images/backgrounds/about-info-2-1.png');"></div>
-                    <!-- /.about-info-two__bg -->
-                    <div class="row gutter-y-30">
-                        <div class="col-lg-3">
-                            <div class="about-info-two__logo">
-                                <img src="assets/images/nepali-roots/logos/logo-red.png" alt="logo-dark" width="159">
-                            </div><!-- /.about-info-two__logo -->
-                        </div><!-- /.col-lg-3 -->
-                        <div class="col-lg-6">
-                            <div class="about-info-two__volunteer">
-                                <a href="become-a-volunteer.html" class="cleenhearts-btn cleenhearts-btn--border-base">
-                                    <div class="cleenhearts-btn__icon-box">
-                                        <div class="cleenhearts-btn__icon-box__inner"><span
-                                                class="icon-duble-arrow"></span></div>
+
+                <section class="faq-one faq-one--about section-space">
+                    <div class="faq-one__bg" style="background-image: url('assets/images/backgrounds/faq-bg-2.png');">
+                    </div>
+                    <!-- /.faq-one__bg -->
+                    <div class="container">
+                        <div class="row gutter-y-50">
+                            <div class="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-duration="1500ms"
+                                data-wow-delay="100ms">
+                                <div class="faq-one__image">
+                                    <img src="assets/images/faq/faq-1.png" alt="faq-image">
+                                </div><!-- /.faq-one__image -->
+                            </div><!-- /.col-xl-6 col-lg-6 -->
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="faq-one__content">
+                                    <div class="sec-title">
+
+                                        <h6 class="sec-title__tagline @@extraClassName">Recently asked questions</h6>
+                                        <!-- /.sec-title__tagline -->
+
+                                        <h3 class="sec-title__title">People Are Frequently Asking Some <span
+                                                class="sec-title__title__inner">Questions</span></h3>
+                                        <!-- /.sec-title__title -->
+                                    </div><!-- /.sec-title -->
+                                    <p class="faq-one__text">We help companies develop powerful corporate social
+                                        responsibility,
+                                        grantmaking, and employee engagement strategies.</p><!-- /.faq-one__text -->
+                                    <div class="cleenhearts-accordion wow fadeInUp" data-wow-duration="1500ms"
+                                        data-wow-delay="100ms" data-grp-name="cleenhearts-accordion">
+                                        <div class="accordion @@extraClassName">
+                                            <div class="accordion-title">
+                                                <h4>
+                                                    Do you work with a specific professional domain?
+                                                    <span
+                                                        class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
+                                                </h4>
+                                            </div><!-- /.accordian-title -->
+                                            <div class="accordion-content">
+                                                <div class="inner">
+                                                    <p>We help companies develop powerful corporate social
+                                                        responsibility,
+                                                        grantmaking, and employee engagement strategies.</p>
+                                                </div><!-- /.accordian-content -->
+                                            </div>
+                                        </div><!-- /.accordian-item -->
+                                        <div class="accordion active">
+                                            <div class="accordion-title">
+                                                <h4>
+                                                    Do you support Nepali startups?
+                                                    <span
+                                                        class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
+                                                </h4>
+                                            </div><!-- /.accordian-title -->
+                                            <div class="accordion-content">
+                                                <div class="inner">
+                                                    <p>We help companies develop powerful corporate social
+                                                        responsibility,
+                                                        grantmaking, and employee engagement strategies.</p>
+                                                </div><!-- /.accordian-content -->
+                                            </div>
+                                        </div><!-- /.accordian-item -->
+                                        <div class="accordion @@extraClassName">
+                                            <div class="accordion-title">
+                                                <h4>
+                                                    Is this non profitable organization?
+                                                    <span
+                                                        class="accordion-title__icon"></span><!-- /.accordion-title__icon -->
+                                                </h4>
+                                            </div><!-- /.accordian-title -->
+                                            <div class="accordion-content">
+                                                <div class="inner">
+                                                    <p>We help companies develop powerful corporate social
+                                                        responsibility,
+                                                        grantmaking, and employee engagement strategies.</p>
+                                                </div><!-- /.accordian-content -->
+                                            </div>
+                                        </div><!-- /.accordian-item -->
                                     </div>
-                                    <span class="cleenhearts-btn__text">Any feedback for us?</span>
-                                </a><!-- /.cleenhearts-btn -->
+                                </div><!-- /.faq-one__content -->
+                            </div><!-- /.col-xl-6 col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                    <div class="faq-one__shape">
+                        <img src="assets/images/shapes/faq-shape-1-1.png" alt="faq-shape" class="faq-one__shape__one">
+                        <img src="assets/images/shapes/faq-shape-1-2.png" alt="faq-shape" class="faq-one__shape__two">
+                    </div><!-- /.faq-one__shape -->
+                </section><!-- /.faq-one section-space -->
 
-                            </div><!-- /.about-info-two__volunteer -->
-                        </div><!-- /.col-lg-6 -->
-                        <div class="col-lg-3">
-                            <div class="about-info-two__social social-link-two">
-                                <a href="https://facebook.com">
-                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                                <a href="https://twitter.com">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                    <span class="sr-only">Twitter</span>
-                                </a>
 
-                                <a href="https://youtube.com" aria-hidden="true">
-                                    <i class="fab fa-youtube"></i>
-                                    <span class="sr-only">Youtube</span>
-                                </a>
-                            </div><!-- /.about-info-two__social footer-two__social -->
-                        </div><!-- /.col-lg-3 -->
-                    </div><!-- /.row -->
-                </div><!-- /.about-info-two__wrapper -->
-            </div><!-- /.container -->
-        </section><!-- /.about-info-two -->
+                <section class="about-info-two">
+                    <div class="container">
+                        <div class="about-info-two__wrapper">
+                            <div class="about-info-two__bg"
+                                style="background-image: url('assets/images/backgrounds/about-info-2-1.png');"></div>
+                            <!-- /.about-info-two__bg -->
+                            <div class="row gutter-y-30">
+                                <div class="col-lg-3">
+                                    <div class="about-info-two__logo">
+                                        <img src="assets/images/nepali-roots/logos/logo-red.png" alt="logo-dark"
+                                            width="159">
+                                    </div><!-- /.about-info-two__logo -->
+                                </div><!-- /.col-lg-3 -->
+                                <div class="col-lg-6">
+                                    <div class="about-info-two__volunteer">
+                                        <a href="become-a-volunteer.html"
+                                            class="cleenhearts-btn cleenhearts-btn--border-base">
+                                            <div class="cleenhearts-btn__icon-box">
+                                                <div class="cleenhearts-btn__icon-box__inner"><span
+                                                        class="icon-duble-arrow"></span></div>
+                                            </div>
+                                            <span class="cleenhearts-btn__text">Any feedback for us?</span>
+                                        </a><!-- /.cleenhearts-btn -->
 
-        <footer class="footer-three footer-two main-footer"
-            style="background-image: url('assets/images/backgrounds/footer-bg-2-1.png');">
-            <div class="main-footer__top">
-                <div class="container">
-                    <div class="row gutter-y-30">
-                        <div class="col-md-12 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                            <div class="footer-widget footer-widget--about">
-                                <h2 class="footer-widget__title">About Nepali Roots </h2><!-- /.footer-widget__title -->
-                                <p class="footer-widget__about-text">
-                                    We are a non-profit organization based in Munich, Germany, dedicated to connecting
-                                    Nepali professionals and fostering a supportive network for mutual growth in career,
-                                    professional, and personal development.
-                                </p>
-                            </div><!-- /.footer-widget -->
-                            <!-- <a href="https://www.google.com/maps/@23.506657,90.3443647,7z?entry=ttu"
-                                class="footer-widget__map">
-                                <span class="footer-widget__map__text">View Map</span>
-                                <span class="footer-widget__map__icon icon-paper-plane"></span>
-                            </a> -->
-                        </div><!-- /.col-md-12 col-xl-3 -->
-                        <div class="col-xl-3 col-md-5 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                            <div class="footer-widget footer-widget--contact">
-                                <h2 class="footer-widget__title">Get in touch!</h2><!-- /.footer-widget__title -->
-                                <ul class="list-unstyled footer-widget__info">
-                                    <li> <span class="icon-location"></span>
-                                        <address>Munich, Germany</address>
-                                    </li>
-                                    <!-- <li> <span class="icon-phone"></span><a href="tel:(406)555-0120">(406) 555-0120</a> -->
-                                    </li>
-                                    <li> <span class="icon-envelope"></span><a
-                                            href="mailto:nepaliroots@gmail.com">nepaliroots@gmail.com</a></li>
-                                </ul><!-- /.list-unstyled -->
-                            </div><!-- /.footer-widget -->
-                        </div><!-- /.col-xl-3 col-md-5 -->
-                        <div class="col-md-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
-                            <div class="footer-widget footer-widget--links">
-                                <h2 class="footer-widget__title">Quick Links</h2><!-- /.footer-widget__title -->
-                                <ul class="list-unstyled footer-widget__links">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="donate-right.html">Workshops</a></li>
-                                    <li><a href="donate.html">Blog Posts</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul><!-- /.list-unstyled footer-widget__links -->
-                            </div><!-- /.footer-widget -->
-                        </div><!-- /.col-md-3 -->
+                                    </div><!-- /.about-info-two__volunteer -->
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-lg-3">
+                                    <div class="about-info-two__social social-link-two">
+                                        <a href="https://facebook.com">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </a>
+                                        <a href="https://twitter.com">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter</span>
+                                        </a>
 
-                        <div class="col-md-12 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                            <div class="footer-widget footer-widget--about">
-                                <h2 class="footer-widget__title">What is e.V in Germany? </h2>
-                                <!-- /.footer-widget__title -->
-                                <p class="footer-widget__about-text">
-                                    In Germany, "e.V." stands for "eingetragener Verein," meaning "registered
-                                    association." It refers to a non-profit organization that is officially registered,
-                                    giving it legal status to operate, enter contracts, and receive tax benefits.
-                                </p>
-                            </div><!-- /.footer-widget -->
-                            <!-- <a href="https://www.google.com/maps/@23.506657,90.3443647,7z?entry=ttu"
-                                class="footer-widget__map">
-                                <span class="footer-widget__map__text">View Map</span>
-                                <span class="footer-widget__map__icon icon-paper-plane"></span>
-                            </a> -->
-                        </div><!-- /.col-md-12 col-xl-3 -->
+                                        <a href="https://youtube.com" aria-hidden="true">
+                                            <i class="fab fa-youtube"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </a>
+                                    </div><!-- /.about-info-two__social footer-two__social -->
+                                </div><!-- /.col-lg-3 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.about-info-two__wrapper -->
+                    </div><!-- /.container -->
+                </section><!-- /.about-info-two -->
 
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.main-footer__top -->
-            <div class="footer-three__bottom">
-                <div class="container">
-                    <div class="footer-three__bottom__inner">
-                        <p class="footer-three__copyright">
-                            &copy; Copyright <span class="dynamic-year"></span> Nepali Roots All Rights Reserved.
-                        </p>
-                    </div><!-- /.footer-three__bottom__inner -->
-                </div><!-- /.container -->
-            </div><!-- /.footer-three__bottom -->
-        </footer><!-- /.footer-three footer-two main-footer -->
-
+                <%- include ("../partials/footer.ejs") %>
 
     </div><!-- /.page-wrapper -->
 
@@ -1365,29 +987,8 @@
         </div><!-- /.sidebar__content -->
     </aside><!-- /.sidebar-one -->
 
-    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/swiper/js/swiper-bundle.min.js"></script>
-    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/countdown/countdown.min.js"></script>
-    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
-    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
-    <!-- template js -->
-    <script src="assets/js/cleenhearts.js"></script>
+    <%- include ("../partials/footer-scripts.ejs") %>
+
 </body>
 
 </html>

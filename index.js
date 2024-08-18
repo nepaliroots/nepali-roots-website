@@ -7,7 +7,6 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
   .get('/:url_path', (req, res) => {
     // Extract the filename from the URL
     const filename = req.params.url_path;
@@ -24,5 +23,5 @@ express()
       return res.render('pages/' + filename);
     });
 
-  })
+  }).get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
