@@ -10,6 +10,7 @@ express()
   .get('/:url_path', (req, res) => {
     // Extract the filename from the URL
     const filename = req.params.url_path;
+    console.log('params: ', req.params)
 
     // Construct the full file path (assuming files are in a "public" directory)
     const filePath = path.join(__dirname, 'public', filename);
@@ -18,6 +19,7 @@ express()
     fs.access(filePath, fs.constants.F_OK, (err) => {
       if (err) {
         // If the file doesn't exist, render the "not found" page
+        console.log('Error: ', err);
         return res.render('pages/notfound', { title: 'Page Not Found', filename });
       }
       return res.render('pages/' + filename);
