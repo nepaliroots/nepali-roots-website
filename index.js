@@ -10,20 +10,25 @@ express()
   .get('/:url_path', (req, res) => {
     // Extract the filename from the URL
     const filename = req.params.url_path;
-    console.log('params: ', req.params)
 
     // Construct the full file path (assuming files are in a "public" directory)
-    const filePath = path.join(__dirname, 'public', filename);
+    // const filePath = path.join(__dirname, 'views/pages', filename);
 
-    // Check if the file exists
-    fs.access(filePath, fs.constants.F_OK, (err) => {
-      if (err) {
-        // If the file doesn't exist, render the "not found" page
-        console.log('Error: ', err);
-        return res.render('pages/notfound', { title: 'Page Not Found', filename });
-      }
-      return res.render('pages/' + filename);
-    });
+    // // Check if the file exists
+    // fs.access(filePath, fs.constants.F_OK, (err) => {
+    //   if (err) {
+    //     // If the file doesn't exist, render the "not found" page
+    //     console.log('Error: ', err);
+    //     return res.render('pages/notfound', { title: 'Page Not Found', filename });
+    //   }
+    //   return res.render('pages/' + filename);
+    // });
+
+    // if (fs.existsSync(filePath)) {
+    //   console.log('File exists.');
+    // }
+
+    return res.render('pages/' + filename);
 
   }).get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
