@@ -2,3 +2,17 @@
     line-height: 0.85;
     color: #f6d468;
 }
+
+.preloader__image {
+    background-size: 200px auto;
+}
+
+
+@media (max-width: 767px) {
+    .video-one__title {
+        display: unset;
+        letter-spacing: 0;
+        line-height: 0.95;
+        font-size: 50px;
+    }
+}
