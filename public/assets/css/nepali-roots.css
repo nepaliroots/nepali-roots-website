@@ -20,3 +20,7 @@
 .donation-card .donation-card__image img {
     border: 1px solid #ab96b4;
 }
+
+.events-list-page.section-space {
+    padding-top: 0px;
+}
