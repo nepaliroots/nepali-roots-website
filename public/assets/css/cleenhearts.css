@@ -8144,6 +8144,8 @@ body.megamenu-popup-active .mobile-nav__content {
   -webkit-transform: translate(calc(-50% + 5px), -50%);
   transform: translate(calc(-50% + 5px), -50%);
   z-index: 999991;
+  display: none;
+  /* can uncomment display: none if we want to enable custom cursor */
 }
 
 .custom-cursor__cursor-two {
