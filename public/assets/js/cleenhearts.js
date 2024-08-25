@@ -68,14 +68,14 @@
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
       }, {
-        accY: -50
-      }
+      accY: -50
+    }
     );
   }
 
   // Popular Causes Progress Bar
   if ($(".count-bar--noappear").length) {
-    $(".count-bar--noappear").each(function(){
+    $(".count-bar--noappear").each(function () {
       var el = $(this);
       var percent = el.data("percent");
       $(el).css("width", percent).addClass("counted");
@@ -108,8 +108,8 @@
           });
         }
       }, {
-        accY: 0
-      }
+      accY: 0
+    }
     );
   }
 
@@ -131,44 +131,44 @@
     })
   }
 
-  // custom coursor
-  if ($(".custom-cursor").length) {
-    var cursor = document.querySelector(".custom-cursor__cursor");
-    var cursorinner = document.querySelector(".custom-cursor__cursor-two");
-    var a = document.querySelectorAll("a");
+  // custom coursor - disable custom cursor because it made felt slower - nepali roots request
+  // if ($(".custom-cursor").length) {
+  //   var cursor = document.querySelector(".custom-cursor__cursor");
+  //   var cursorinner = document.querySelector(".custom-cursor__cursor-two");
+  //   var a = document.querySelectorAll("a");
 
-    document.addEventListener("mousemove", function (e) {
-      var x = e.clientX;
-      var y = e.clientY;
-      cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
-    });
+  //   document.addEventListener("mousemove", function (e) {
+  //     var x = e.clientX;
+  //     var y = e.clientY;
+  //     cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+  //   });
 
-    document.addEventListener("mousemove", function (e) {
-      var x = e.clientX;
-      var y = e.clientY;
-      cursorinner.style.left = x + "px";
-      cursorinner.style.top = y + "px";
-    });
+  //   document.addEventListener("mousemove", function (e) {
+  //     var x = e.clientX;
+  //     var y = e.clientY;
+  //     cursorinner.style.left = x + "px";
+  //     cursorinner.style.top = y + "px";
+  //   });
 
-    document.addEventListener("mousedown", function () {
-      cursor.classList.add("click");
-      cursorinner.classList.add("custom-cursor__innerhover");
-    });
+  //   document.addEventListener("mousedown", function () {
+  //     cursor.classList.add("click");
+  //     cursorinner.classList.add("custom-cursor__innerhover");
+  //   });
 
-    document.addEventListener("mouseup", function () {
-      cursor.classList.remove("click");
-      cursorinner.classList.remove("custom-cursor__innerhover");
-    });
+  //   document.addEventListener("mouseup", function () {
+  //     cursor.classList.remove("click");
+  //     cursorinner.classList.remove("custom-cursor__innerhover");
+  //   });
 
-    a.forEach((item) => {
-      item.addEventListener("mouseover", () => {
-        cursor.classList.add("custom-cursor__hover");
-      });
-      item.addEventListener("mouseleave", () => {
-        cursor.classList.remove("custom-cursor__hover");
-      });
-    });
-  }
+  //   a.forEach((item) => {
+  //     item.addEventListener("mouseover", () => {
+  //       cursor.classList.add("custom-cursor__hover");
+  //     });
+  //     item.addEventListener("mouseleave", () => {
+  //       cursor.classList.remove("custom-cursor__hover");
+  //     });
+  //   });
+  // }
 
   if ($(".contact-form-validated").length) {
     $(".contact-form-validated").validate({
@@ -464,8 +464,8 @@
     if ($(this).next().val() > 0) {
       if ($(this).next().val() > 0)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -629,8 +629,8 @@
         $("html, body")
           .stop()
           .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
-            },
+            scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          },
             900,
             "easeInOutExpo"
           );
