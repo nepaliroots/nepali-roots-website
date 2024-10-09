@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ("../partials/header-scripts.ejs") %>
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+
+    <div class="preloader">
+        <!-- <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div> -->
+
+        <div class="preloader__image" style="background-image: url(assets/images/nepali-roots/logos/logo-red.png);">
+        </div>
+    </div>
+
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <%- include ("../partials/header-menus.ejs") %>
+
+            <section class="page-header @@extraClassName">
+                <div class="page-header__bg"
+                    style="background-image: url('assets/images/nepali-roots/banners/subpage-banner-2.png');"></div>
+                <!-- /.page-header__bg -->
+                <div class="container">
+                    <h2 class="page-header__title">Blog Posts</h2>
+                    <ul class="cleenhearts-breadcrumb list-unstyled">
+                        <li><i class="icon-home"></i> <a href="/">Home</a></li>
+                        <li><span>Blog Posts</span></li>
+                    </ul><!-- /.thm-breadcrumb list-unstyled -->
+                </div><!-- /.container -->
+            </section><!-- /.page-header -->
+
+            <%- include ("../blog-partials/blog-list-view.ejs") %>
+
+
+
+                <%- include ("../partials/footer.ejs") %>
+
+    </div><!-- /.page-wrapper -->
+
+    <%- include ("../partials/mobile-menus.ejs") %>
+
+        <div class="search-popup @@extraClassName">
+            <div class="search-popup__overlay search-toggler"></div>
+            <!-- /.search-popup__overlay -->
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="#">
+                    <input type="text" id="search" placeholder="Search Here..." />
+                    <button type="submit" aria-label="search submit" class="cleenhearts-btn">
+                        <span><i class="icon-search"></i></span>
+                    </button>
+                </form>
+            </div>
+            <!-- /.search-popup__content -->
+        </div>
+        <!-- /.search-popup -->
+
+        <%- include ("../partials/scroll-to-top.ejs") %>
+            <%- include ("../partials/sidebar-right-overlay.ejs") %>
+
+                <%- include ("../partials/footer-scripts.ejs") %>
+</body>
+
+</html>

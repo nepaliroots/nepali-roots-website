@@ -10,7 +10,7 @@ express()
   .get('/:url_path', (req, res) => {
     // Extract the filename from the URL
     const filename = req.params.url_path;
-
+    let basepath = 'pages/'
     // Construct the full file path (assuming files are in a "public" directory)
     // const filePath = path.join(__dirname, 'views/pages', filename);
 
@@ -27,8 +27,11 @@ express()
     // if (fs.existsSync(filePath)) {
     //   console.log('File exists.');
     // }
+    if (filename.toLowerCase().includes('blogs')) {
+      basepath = 'blogs/';
+    }
 
-    return res.render('pages/' + filename);
+    return res.render(basepath + filename);
 
   }).get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
