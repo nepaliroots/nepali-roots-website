@@ -1,37 +1,48 @@
-const express = require('express')
-const path = require('path')
-const fs = require('fs');
-const PORT = process.env.PORT || 5001
+const express = require('express');
+const path = require('path');
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/:url_path', (req, res) => {
-    // Extract the filename from the URL
-    const filename = req.params.url_path;
-    let basepath = 'pages/'
-    // Construct the full file path (assuming files are in a "public" directory)
-    // const filePath = path.join(__dirname, 'views/pages', filename);
+const app = express();
+const PORT = process.env.PORT || 5001;
 
-    // // Check if the file exists
-    // fs.access(filePath, fs.constants.F_OK, (err) => {
-    //   if (err) {
-    //     // If the file doesn't exist, render the "not found" page
-    //     console.log('Error: ', err);
-    //     return res.render('pages/notfound', { title: 'Page Not Found', filename });
-    //   }
-    //   return res.render('pages/' + filename);
-    // });
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-    // if (fs.existsSync(filePath)) {
-    //   console.log('File exists.');
-    // }
-    if (filename.toLowerCase().includes('blogs')) {
-      basepath = 'blogs/';
-    }
+// Set view engine and views directory
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-    return res.render(basepath + filename);
+// Middleware to log URL paths for debugging (optional)
+app.use((req, res, next) => {
+  console.log('Requested URL:', req.originalUrl);
+  next();
+});
 
-  }).get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${PORT}`))
+// Route for blog pages
+app.get('/blogs/:url_path', (req, res) => {
+  const filename = req.params.url_path;
+  console.log('Blog URL path:', filename);
+
+  // Render the blog page or a 404 if it does not exist
+  return res.render(`blogs/${filename}`);
+});
+
+// Route for main pages
+app.get('/:url_path', (req, res) => {
+  const filename = req.params.url_path;
+  console.log('Pages URL path:', filename);
+  // Render the main page or a 404 if it does not exist
+  return res.render(`pages/${filename}`);
+});
+
+// Home route
+app.get('/', (req, res) => res.render('pages/index'));
+
+// Fallback route for 404 Not Found
+app.use((req, res) => {
+  res.status(404).render('404'); // Render a generic 404 page for unmatched routes
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
