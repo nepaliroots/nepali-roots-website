@@ -26,6 +26,15 @@ app.get('/blogs/:url_path', (req, res) => {
   return res.render(`blogs/${filename}`);
 });
 
+// Route for conference pages
+app.get('/conferences/:url_path', (req, res) => {
+  const filename = req.params.url_path;
+  console.log('Conference URL path:', filename);
+
+  // Render the blog page or a 404 if it does not exist
+  return res.render(`conferences/${filename}`);
+});
+
 // Route for main pages
 app.get('/:url_path', (req, res) => {
   const filename = req.params.url_path;
