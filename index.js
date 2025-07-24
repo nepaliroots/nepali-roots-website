@@ -35,7 +35,7 @@ app.get('/conferences/:url_path', (req, res) => {
   return res.render(`conferences/${filename}`);
 });
 
-// Route for main pages
+// Route for main pages ...
 app.get('/:url_path', (req, res) => {
   const filename = req.params.url_path;
   console.log('Pages URL path:', filename);
