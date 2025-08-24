@@ -33,3 +33,7 @@
 .volunteer-details__designation {
     line-height: 1.5;
 }
+
+.align-text-center {
+    text-align: center;
+}
