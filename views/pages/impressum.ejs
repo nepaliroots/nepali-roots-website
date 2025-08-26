@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ("../partials/header-scripts.ejs") %>
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(/assets/images/nepali-roots/logos/logo-red.png);">
+        </div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <%- include ("../partials/header-menus.ejs") %>
+
+            <section class="page-header @@extraClassName">
+                <div class="page-header__bg"
+                    style="background-image: url('/assets/images/nepali-roots/banners/subpage-banner.png');"></div>
+                <!-- /.page-header__bg -->
+                <div class="container">
+                    <h2 class="page-header__title">Impressum</h2>
+                    <ul class="cleenhearts-breadcrumb list-unstyled">
+                        <li><i class="icon-home"></i> <a href="/">Home</a></li>
+                        <li><span>Impressum</span></li>
+                    </ul><!-- /.thm-breadcrumb list-unstyled -->
+                </div><!-- /.container -->
+            </section>
+
+        <!-- Login Start -->
+        <section class="login-page section-space">
+            <div class="container">
+                <div class="row gutter-y-40">
+                    <div class="col-lg-3 wow fadeInUp" data-wow-duration="1500ms">
+
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="login-page__form align-text-center">
+                            <h2 class="login-page__form__title">Nepali Roots e.V</h2>
+                            <form class="login-page__form__box form-one">
+                                
+                            
+                                <div class="login-page__form__or">
+                                    <hr class="login-page__form__or-line">
+                                    <span class="login-page__form__or-text">🙏🏻🙏🏻🙏🏻</span>
+                                    <hr class="login-page__form__or-line">
+                                </div>
+                                <div class="login-page__form__signin">
+
+                                    
+                                        <p class="">Adresse: Ebenböckstr. 20, 81241 Munich | Germany  </p>
+                                        <p>Email: nepaliroots@gmail.com | contact@nepaliroots.org </p>
+                                        <p>Registered Office: Munich, Germany </p>
+                                        <p>Registration Number: VR 210995 </p>
+                                        
+                                
+                                </div>
+                            </form>
+                        </div><!-- login-form -->
+                    </div>
+
+                    <div class="col-lg-3 wow fadeInUp" data-wow-duration="1500ms">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Login End -->
+
+            <%- include ("../partials/footer.ejs") %>
+
+    </div><!-- /.page-wrapper -->
+
+    <%- include ("../partials/mobile-menus.ejs") %>
+
+        <%- include ("../partials/scroll-to-top.ejs") %>
+
+            <%- include ("../partials/sidebar-right-overlay.ejs") %>
+                <%- include ("../partials/footer-scripts.ejs") %>
+
+</body>
+
+</html>
